@@ -51,8 +51,11 @@ main{padding:28px 0 40px}
 .theme h4{font-size:.9rem;color:var(--main-dark);margin:12px 0 4px}
 .theme ol,.theme ul{padding-left:22px;font-size:.92rem}
 .matome{background:#f4fafc;border-radius:8px;padding:10px 14px;font-size:.9rem;margin-top:12px}
-#retryBtn{display:block;margin:8px auto 0;padding:12px 28px;background:#fff;color:var(--main-dark);border:2px solid var(--main);border-radius:10px;font-size:1rem;cursor:pointer}
-#retryBtn:hover{background:#fff1e2}
+#pager{display:flex;justify-content:center;gap:6px;margin-top:12px;flex-wrap:wrap}
+#pager button{min-width:42px;padding:10px 12px;background:#fff;color:var(--main-dark);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer}
+#pager button:hover{border-color:var(--main);background:#fff1e2}
+#pager button.cur{background:var(--main);color:#fff;border-color:var(--main);font-weight:bold}
+#pager button.next{border-color:var(--main);font-weight:bold}
 section.info{margin-top:40px}
 section.info h2{font-size:1.25rem;color:var(--main-dark);border-left:5px solid var(--main);padding-left:10px;margin-bottom:14px}
 .faq dt{font-weight:bold;margin-top:14px}
@@ -116,7 +119,7 @@ footer a{color:#ffd9a8;text-decoration:none;margin:0 8px}
 <h2>あなたにおすすめの自由研究</h2>
 <p id="resultNote"></p>
 <div id="themes"></div>
-<button id="retryBtn">つぎの候補を見る</button>
+<div id="pager"></div>
 </div>
 </div>
 
@@ -136,7 +139,7 @@ footer a{color:#ffd9a8;text-decoration:none;margin:0 8px}
 <h2>よくある質問</h2>
 <dl class="faq">
 <dt>診断は何回でも使えますか？</dt>
-<dd>はい、何回でも無料で使えます。診断結果は3件ずつのページになっていて、「つぎの候補を見る」ボタンで残りの候補もすべて見られます。</dd>
+<dd>はい、何回でも無料で使えます。診断結果は3件ずつのページに分かれていて、結果の下のページ番号（1・2・3…）や「次へ」ボタンで、すべての候補を見られます。</dd>
 <dt>テーマはそのまま学校に提出できますか？</dt>
 <dd>テーマと手順はあくまで出発点です。実際に自分でやってみて、気づいたことや失敗も含めて記録すると、オリジナルの研究になります。</dd>
 <dt>入力した内容はどこかに送られますか？</dt>
@@ -250,7 +253,7 @@ function buildPool(){
 function showPage(){
   const start=page*3,items=pool.slice(start,start+3);
   const total=pool.length,pages=Math.ceil(total/3);
-  let note="この条件のテーマ 全"+total+"件中 "+(start+1)+"〜"+(start+items.length)+"件目（"+(page+1)+"/"+pages+"ページ）";
+  let note="この条件のテーマは全"+total+"件（"+pages+"ページ）｜ いま "+(page+1)+"ページ目・"+(start+1)+"〜"+(start+items.length)+"件目を表示中";
   if(relaxed)note+=" ※日数の条件を少しゆるめた候補も含めています。";
   document.getElementById('resultNote').textContent=note;
   document.getElementById('themes').innerHTML=items.map(function(x){
@@ -261,13 +264,14 @@ function showPage(){
     '<h4>用意するもの</h4><ul>'+x.mat.map(function(m){return '<li>'+m+'</li>';}).join('')+'</ul>'+
     '<div class="matome">📝 <strong>まとめ方のコツ:</strong> '+x.matome+'</div></div>';
   }).join('');
-  const btn=document.getElementById('retryBtn');
+  let ph="";
   if(pages>1){
-    btn.style.display='block';
-    btn.textContent=(page+1<pages)?"つぎの候補を見る（"+(page+2)+"ページ目へ）":"1ページ目にもどる";
-  }else{
-    btn.style.display='none';
+    for(let p=0;p<pages;p++){
+      ph+='<button data-p="'+p+'"'+(p===page?' class="cur"':'')+'>'+(p+1)+'</button>';
+    }
+    if(page+1<pages)ph+='<button data-p="'+(page+1)+'" class="next">次へ ›</button>';
   }
+  document.getElementById('pager').innerHTML=ph;
   document.getElementById('result').style.display='block';
 }
 document.getElementById('goBtn').addEventListener('click',function(){
@@ -276,9 +280,10 @@ document.getElementById('goBtn').addEventListener('click',function(){
   showPage();
   document.getElementById('result').scrollIntoView({behavior:'smooth'});
 });
-document.getElementById('retryBtn').addEventListener('click',function(){
-  const pages=Math.ceil(pool.length/3);
-  page=(page+1)%pages;
+document.getElementById('pager').addEventListener('click',function(e){
+  const b=e.target.closest('button');
+  if(!b)return;
+  page=parseInt(b.dataset.p,10);
   showPage();
   document.getElementById('result').scrollIntoView({behavior:'smooth'});
 });
