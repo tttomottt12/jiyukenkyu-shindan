@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jiyukenkyu-shindan.net/sitemap.xml
