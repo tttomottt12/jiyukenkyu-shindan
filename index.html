@@ -334,7 +334,10 @@ function showPage(){
   // 表示中テーマに合わせて広告を切り替え
   const AD_SEARCH={lead:"実験キットや工作の材料は、楽天市場でまとめてそろえられます。",btn:"楽天市場で「自由研究キット」を探す",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
   const AD_PLANET={lead:"星の観察テーマには、自分で作って天井に映せるプラネタリウム工作キットも人気です。",btn:"プラネタリウム工作キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnenohoshi%2F016_01%2F%3FvariantId%3D016_01&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
-  const ad=items.some(function(x){return /星座|月の満ち欠け/.test(x.t);})?AD_PLANET:AD_SEARCH;
+  const AD_ANT={lead:"アリの観察には、巣の中のようすまで見える専用の観察キットを使うと、記録がぐっと楽になります。",btn:"アリの巣観察セットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b186da.b423c852.55b186db.4d32ad1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsucame%2Fhit687%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"};
+  let ad=AD_SEARCH;
+  if(items.some(function(x){return /星座|月の満ち欠け/.test(x.t);}))ad=AD_PLANET;
+  if(items.some(function(x){return /アリの行列/.test(x.t);}))ad=AD_ANT;
   document.getElementById('adLead').textContent=ad.lead;
   const adBtn=document.getElementById('adBtn');
   adBtn.textContent=ad.btn;
