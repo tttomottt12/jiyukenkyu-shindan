@@ -331,11 +331,22 @@ function showPage(){
     if(page+1<pages)ph+='<button data-p="'+(page+1)+'" class="next">次へ ›</button>';
   }
   document.getElementById('pager').innerHTML=ph;
-  // 表示中テーマに合わせて広告を切り替え
-  const AD_SEARCH={lead:"実験キットや工作の材料は、楽天市場でまとめてそろえられます。",btn:"楽天市場で「自由研究キット」を探す",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
+  // 表示中テーマ・ジャンルに合わせて広告を切り替え
+  function rakuSearch(kw){
+    return "https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc="+encodeURIComponent("https://search.rakuten.co.jp/search/mall/"+encodeURIComponent(kw).replace(/%20/g,"+")+"/")+"&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9";
+  }
+  const AD_SEARCH={lead:"実験キットや工作の材料は、楽天市場でまとめてそろえられます。",btn:"楽天市場で「自由研究キット」を探す",url:rakuSearch("自由研究 キット")};
+  const AD_GENRE={
+    sci:{lead:"1日で終わってレポートの見本まで付いた実験キットもあります。炎の色が変わる「炎色反応」は見た目のインパクトも抜群です。",btn:"炎色反応の実験キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b197c6.621201d2.55b197c7.409d47ae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fneoshop2%2Fwsl-01%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"},
+    nat:{lead:"虫めがね・観察ケース・図鑑など、観察の道具は楽天市場でそろえられます。",btn:"観察キットを楽天で探す",url:rakuSearch("観察キット 自由研究")},
+    cra:{lead:"材料がひとまとめになった工作キットなら、買い出しなしですぐ始められます。",btn:"工作キットを楽天で探す",url:rakuSearch("工作キット 小学生")},
+    coo:AD_SEARCH,
+    res:{lead:"調べたことをまとめる白地図や学習ポスターは、楽天市場で手に入ります。",btn:"白地図・学習ポスターを楽天で探す",url:rakuSearch("白地図 学習")},
+    it:{lead:"プログラミングの自由研究には、子ども向けの入門書が1冊あると心強いです。",btn:"プログラミング入門本を楽天で探す",url:rakuSearch("プログラミング 本 小学生")}
+  };
   const AD_PLANET={lead:"星の観察テーマには、自分で作って天井に映せるプラネタリウム工作キットも人気です。",btn:"プラネタリウム工作キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnenohoshi%2F016_01%2F%3FvariantId%3D016_01&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
   const AD_ANT={lead:"アリの観察には、巣の中のようすまで見える専用の観察キットを使うと、記録がぐっと楽になります。",btn:"アリの巣観察セットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b186da.b423c852.55b186db.4d32ad1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsucame%2Fhit687%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"};
-  let ad=AD_SEARCH;
+  let ad=AD_GENRE[sel.genre]||AD_SEARCH;
   if(items.some(function(x){return /星座|月の満ち欠け/.test(x.t);}))ad=AD_PLANET;
   if(items.some(function(x){return /アリの行列/.test(x.t);}))ad=AD_ANT;
   document.getElementById('adLead').textContent=ad.lead;
