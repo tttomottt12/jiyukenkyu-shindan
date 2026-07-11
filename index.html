@@ -145,8 +145,8 @@ footer a{color:#ffd9a8;text-decoration:none;margin:0 8px}
 <div id="pager"></div>
 <div class="adbox">
 <span class="adlabel">広告・PR</span>
-<p>実験キットや工作の材料は、楽天市場でまとめてそろえられます。</p>
-<a class="adbtn" href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で「自由研究キット」を探す</a>
+<p id="adLead">実験キットや工作の材料は、楽天市場でまとめてそろえられます。</p>
+<a class="adbtn" id="adBtn" href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で「自由研究キット」を探す</a>
 <p class="adnote">※当サイトはアフィリエイト広告を利用しています。リンク先で購入があった場合、当サイトに紹介料が支払われることがあります。</p>
 </div>
 </div>
@@ -331,6 +331,14 @@ function showPage(){
     if(page+1<pages)ph+='<button data-p="'+(page+1)+'" class="next">次へ ›</button>';
   }
   document.getElementById('pager').innerHTML=ph;
+  // 表示中テーマに合わせて広告を切り替え
+  const AD_SEARCH={lead:"実験キットや工作の材料は、楽天市場でまとめてそろえられます。",btn:"楽天市場で「自由研究キット」を探す",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
+  const AD_PLANET={lead:"星の観察テーマには、自分で作って天井に映せるプラネタリウム工作キットも人気です。",btn:"プラネタリウム工作キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnenohoshi%2F016_01%2F%3FvariantId%3D016_01&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
+  const ad=items.some(function(x){return /星座|月の満ち欠け/.test(x.t);})?AD_PLANET:AD_SEARCH;
+  document.getElementById('adLead').textContent=ad.lead;
+  const adBtn=document.getElementById('adBtn');
+  adBtn.textContent=ad.btn;
+  adBtn.href=ad.url;
   document.getElementById('result').style.display='block';
 }
 document.getElementById('goBtn').addEventListener('click',function(){
