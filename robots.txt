@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jiyukenkyu-shindan.net/sitemap.xml
+Sitemap: https://furusato-gendo.com/sitemap.xml
