@@ -146,7 +146,7 @@ footer a{color:#ffd9a8;text-decoration:none;margin:0 8px}
 <div class="adbox">
 <span class="adlabel">広告・PR</span>
 <p id="adLead">実験キットや工作の材料は、楽天市場でまとめてそろえられます。</p>
-<a class="adbtn" id="adBtn" href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で「自由研究キット」を探す</a>
+<div id="adBody"><a class="adbtn" href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で「自由研究キット」を探す</a></div>
 <p class="adnote">※当サイトはアフィリエイト広告を利用しています。リンク先で購入があった場合、当サイトに紹介料が支払われることがあります。</p>
 </div>
 </div>
@@ -342,7 +342,7 @@ function showPage(){
     cra:{lead:"材料がひとまとめになった工作キットなら、買い出しなしですぐ始められます。",btn:"工作キットを楽天で探す",url:rakuSearch("工作キット 小学生")},
     coo:AD_SEARCH,
     res:{lead:"調べたことをまとめる白地図や学習ポスターは、楽天市場で手に入ります。",btn:"白地図・学習ポスターを楽天で探す",url:rakuSearch("白地図 学習")},
-    it:{lead:"プログラミングの自由研究には、子ども向けの入門書が1冊あると心強いです。",btn:"プログラミング入門本を楽天で探す",url:rakuSearch("プログラミング 本 小学生")}
+    it:{lead:"プログラミングのテーマに本格的に取り組むなら、ゲームで学べる小中学生専門のオンラインスクール（無料体験あり）という選択肢もあります。",html:'<a class="adbtn" href="https://px.a8.net/svt/ejp?a8mat=4B7WD2+6F07HU+4QCS+5YRHE" rel="nofollow sponsored noopener" target="_blank">小中学生専門のオンランプログラミングスクール【アンズテック】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B7WD2+6F07HU+4QCS+5YRHE" alt="">'}
   };
   const AD_PLANET={lead:"星の観察テーマには、自分で作って天井に映せるプラネタリウム工作キットも人気です。",btn:"プラネタリウム工作キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnenohoshi%2F016_01%2F%3FvariantId%3D016_01&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
   const AD_ANT={lead:"アリの観察には、巣の中のようすまで見える専用の観察キットを使うと、記録がぐっと楽になります。",btn:"アリの巣観察セットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b186da.b423c852.55b186db.4d32ad1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsucame%2Fhit687%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"};
@@ -350,9 +350,12 @@ function showPage(){
   if(items.some(function(x){return /星座|月の満ち欠け/.test(x.t);}))ad=AD_PLANET;
   if(items.some(function(x){return /アリの行列/.test(x.t);}))ad=AD_ANT;
   document.getElementById('adLead').textContent=ad.lead;
-  const adBtn=document.getElementById('adBtn');
-  adBtn.textContent=ad.btn;
-  adBtn.href=ad.url;
+  const adBody=document.getElementById('adBody');
+  if(ad.html){
+    adBody.innerHTML=ad.html;
+  }else{
+    adBody.innerHTML='<a class="adbtn" href="'+ad.url+'" target="_blank" rel="nofollow sponsored noopener">'+ad.btn+'</a>';
+  }
   document.getElementById('result').style.display='block';
 }
 document.getElementById('goBtn').addEventListener('click',function(){
