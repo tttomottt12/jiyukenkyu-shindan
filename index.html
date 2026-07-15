@@ -1,1084 +1,389 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="X1VqPiPF9wDF2-OF25d5xgsznCV2Pjatirp_NmZRyEw" />
+<meta name="google-site-verification" content="at6WFD-7M6UmqXECRKjkIa6DdosCnR_LqA78PHl2J1U" />
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7729117817210489"
-     crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56MQW9DM6S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-56MQW9DM6S');
-</script>
-
-<title>ふるさと納税 限度額シミュレーター｜自己負担2,000円でお得に寄付</title>
-<meta name="description" content="年収と家族構成を入力するだけで、ふるさと納税の控除上限額（限度額）の目安がすぐわかる無料シミュレーターです。">
-<link rel="canonical" href="https://furusato-gendo.com/">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>自由研究テーマ診断 | 学年と興味で選ぶ、夏休みの自由研究アイデア</title>
+<meta name="description" content="学年・興味・かけられる日数を選ぶだけで、ぴったりの自由研究テーマを無料で診断。手順・用意するもの・まとめ方のコツまで表示。登録不要、小学生から中学生まで対応。">
+<link rel="canonical" href="https://jiyukenkyu-shindan.net/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="自由研究テーマ診断">
+<meta property="og:description" content="学年・興味・日数を選ぶだけで、ぴったりの自由研究テーマを無料診断。">
+<meta property="og:url" content="https://jiyukenkyu-shindan.net/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="ふるさと納税 限度額シミュレーター">
-<meta property="og:title" content="ふるさと納税 限度額シミュレーター｜自己負担2,000円でお得に寄付">
-<meta property="og:description" content="年収と家族構成を入力するだけで、ふるさと納税の控除上限額（限度額）の目安がすぐわかる無料シミュレーターです。">
-<meta property="og:url" content="https://furusato-gendo.com/">
-<meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ふるさと納税 限度額シミュレーター｜自己負担2,000円でお得に寄付">
-<meta name="twitter:description" content="年収と家族構成を入力するだけで、ふるさと納税の控除上限額（限度額）の目安がすぐわかる無料シミュレーターです。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHPJBEX65J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-PHPJBEX65J');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7729117817210489" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"自由研究テーマ診断","url":"https://jiyukenkyu-shindan.net/","applicationCategory":"EducationalApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"}}
+</script>
 <style>
-  :root{
-    --paper: #F3EEE1;
-    --paper-deep: #EAE2CC;
-    --ink: #1F2A3C;
-    --ink-soft: #4A5568;
-    --navy: #16233F;
-    --navy-deep: #0D1730;
-    --gold: #B8912F;
-    --gold-soft: #DCC98A;
-    --shu: #B7472A;
-    --shu-deep: #8F3620;
-    --line: rgba(31,42,60,0.14);
-    --radius: 4px;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body{
-    background:
-      radial-gradient(circle at 15% 8%, rgba(184,145,47,0.08), transparent 40%),
-      radial-gradient(circle at 90% 85%, rgba(183,71,42,0.06), transparent 45%),
-      var(--paper);
-    color:var(--ink);
-    font-family:'Noto Sans JP', sans-serif;
-    line-height:1.75;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:760px; margin:0 auto; padding:0 20px 80px;}
-
-  /* Header */
-  header{
-    padding:48px 20px 36px;
-    text-align:center;
-    position:relative;
-  }
-  .eyebrow{
-    font-size:12px;
-    letter-spacing:0.32em;
-    color:var(--gold);
-    font-weight:700;
-    margin-bottom:14px;
-  }
-  h1{
-    font-family:'Shippori Mincho', serif;
-    font-size:clamp(26px,5vw,38px);
-    font-weight:700;
-    color:var(--navy);
-    margin:0 0 12px;
-    letter-spacing:0.04em;
-  }
-  header p.lead{
-    color:var(--ink-soft);
-    font-size:14.5px;
-    max-width:480px;
-    margin:0 auto;
-  }
-  .brush-rule{
-    width:64px;height:3px;
-    background:linear-gradient(90deg, var(--shu), var(--gold));
-    margin:20px auto 0;
-    border-radius:2px;
-  }
-
-  /* Card */
-  .card{
-    background:#FBF8F0;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 18px 40px -24px rgba(13,23,48,0.35);
-    padding:32px;
-    margin-bottom:28px;
-  }
-  .card h2{
-    font-family:'Shippori Mincho', serif;
-    font-size:18px;
-    color:var(--navy);
-    margin:0 0 22px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .card h2 .num{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:24px;height:24px;
-    background:var(--navy);
-    color:var(--gold-soft);
-    font-size:12px;
-    border-radius:50%;
-    font-family:'Noto Sans JP',sans-serif;
-    font-weight:700;
-  }
-
-  .field{margin-bottom:22px;}
-  .field:last-child{margin-bottom:0;}
-  .field label{
-    display:block;
-    font-size:13.5px;
-    font-weight:700;
-    color:var(--ink);
-    margin-bottom:8px;
-  }
-  .field .hint{
-    font-size:12px;
-    color:var(--ink-soft);
-    font-weight:400;
-    margin-left:6px;
-  }
-
-  .income-row{display:flex; align-items:center; gap:12px;}
-  input[type=number]{
-    width:100%;
-    padding:12px 14px;
-    font-size:16px;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    background:#fff;
-    color:var(--ink);
-    font-family:'Noto Sans JP',sans-serif;
-  }
-  input[type=number]:focus{
-    outline:2px solid var(--gold);
-    outline-offset:1px;
-    border-color:var(--gold);
-  }
-  .unit{font-size:13px; color:var(--ink-soft); white-space:nowrap;}
-
-  input[type=range]{
-    width:100%;
-    accent-color:var(--shu);
-    margin-top:10px;
-  }
-
-  .seg{
-    display:flex;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  .seg button{
-    flex:1;
-    padding:11px 8px;
-    border:none;
-    background:#fff;
-    color:var(--ink-soft);
-    font-size:13.5px;
-    font-family:'Noto Sans JP',sans-serif;
-    cursor:pointer;
-    border-right:1px solid var(--line);
-    transition:background .15s, color .15s;
-  }
-  .seg button:last-child{border-right:none;}
-  .seg button.active{
-    background:var(--navy);
-    color:#fff;
-    font-weight:700;
-  }
-  .seg button:hover:not(.active){background:var(--paper-deep);}
-
-  .stepper-row{display:flex; align-items:center; justify-content:space-between; gap:14px;}
-  .stepper{
-    display:flex; align-items:center; gap:14px;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:6px 10px;
-    background:#fff;
-  }
-  .stepper button{
-    width:28px;height:28px;
-    border:none;
-    background:var(--paper-deep);
-    color:var(--navy);
-    font-size:16px;
-    font-weight:700;
-    border-radius:50%;
-    cursor:pointer;
-    line-height:1;
-  }
-  .stepper button:hover{background:var(--gold-soft);}
-  .stepper .count{min-width:20px; text-align:center; font-weight:700;}
-
-  .calc-btn{
-    width:100%;
-    padding:16px;
-    font-size:16px;
-    font-weight:700;
-    font-family:'Noto Sans JP',sans-serif;
-    letter-spacing:0.05em;
-    color:#fff;
-    background:linear-gradient(135deg, var(--navy), var(--navy-deep));
-    border:none;
-    border-radius:var(--radius);
-    cursor:pointer;
-    box-shadow:0 10px 24px -10px rgba(13,23,48,0.55);
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .calc-btn:hover{transform:translateY(-1px); box-shadow:0 14px 28px -10px rgba(13,23,48,0.6);}
-  .calc-btn:active{transform:translateY(0);}
-
-  /* Result */
-  .result{
-    display:none;
-    position:relative;
-    background:#FBF8F0;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:40px 32px 32px;
-    text-align:center;
-    overflow:hidden;
-  }
-  .result.show{display:block; animation:fadeUp .5s ease both;}
-  @keyframes fadeUp{
-    from{opacity:0; transform:translateY(10px);}
-    to{opacity:1; transform:translateY(0);}
-  }
-  .result .label{
-    font-size:13px;
-    color:var(--ink-soft);
-    letter-spacing:0.1em;
-    margin-bottom:6px;
-  }
-  .result .amount{
-    font-family:'Shippori Mincho', serif;
-    font-size:clamp(38px,9vw,58px);
-    color:var(--navy);
-    font-weight:700;
-    line-height:1.1;
-  }
-  .result .amount span{font-size:0.4em; margin-left:6px; color:var(--ink-soft); font-family:'Noto Sans JP',sans-serif; font-weight:500;}
-
-  .hanko{
-    position:absolute;
-    top:22px; right:28px;
-    width:74px; height:74px;
-    border:3px solid var(--shu);
-    border-radius:8px;
-    color:var(--shu);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Shippori Mincho', serif;
-    font-weight:700;
-    font-size:13px;
-    line-height:1.3;
-    text-align:center;
-    transform:rotate(8deg) scale(0);
-    opacity:0;
-    writing-mode:vertical-rl;
-    letter-spacing:0.15em;
-  }
-  .result.show .hanko{
-    animation:stamp .45s cubic-bezier(.34,1.56,.64,1) .35s forwards;
-  }
-  @keyframes stamp{
-    0%{transform:rotate(8deg) scale(2.4); opacity:0;}
-    60%{opacity:0.9;}
-    100%{transform:rotate(8deg) scale(1); opacity:0.9;}
-  }
-
-  .breakdown{
-    margin-top:28px;
-    text-align:left;
-    border-top:1px dashed var(--line);
-    padding-top:20px;
-  }
-  .breakdown .row{
-    display:flex; justify-content:space-between;
-    font-size:13.5px;
-    padding:7px 0;
-    color:var(--ink-soft);
-  }
-  .breakdown .row strong{color:var(--ink); font-weight:700;}
-
-  .note{
-    margin-top:22px;
-    font-size:12px;
-    color:var(--ink-soft);
-    background:var(--paper-deep);
-    border-radius:var(--radius);
-    padding:12px 14px;
-    text-align:left;
-  }
-
-
-  /* Affiliate */
-  .affiliate-box{
-    margin-top:22px;
-    padding:18px;
-    background:#fff;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    text-align:center;
-  }
-  .affiliate-label{
-    display:inline-block;
-    font-size:11px;
-    font-weight:700;
-    color:var(--shu);
-    border:1px solid rgba(183,71,42,0.35);
-    padding:3px 8px;
-    border-radius:999px;
-    margin-bottom:12px;
-  }
-  .affiliate-btn{
-    display:inline-block;
-    width:100%;
-    max-width:420px;
-    padding:15px 18px;
-    background:linear-gradient(135deg, var(--shu), var(--shu-deep));
-    color:#fff;
-    font-weight:700;
-    text-decoration:none;
-    border-radius:var(--radius);
-    box-shadow:0 10px 24px -10px rgba(143,54,32,0.55);
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .affiliate-btn:hover{
-    transform:translateY(-1px);
-    box-shadow:0 14px 28px -10px rgba(143,54,32,0.65);
-  }
-  .affiliate-note{
-    margin-top:10px;
-    font-size:11.5px;
-    color:var(--ink-soft);
-    text-align:left;
-  }
-
-  /* Explainer */
-  .explainer{
-    margin-top:44px;
-  }
-  .explainer h3{
-    font-family:'Shippori Mincho', serif;
-    font-size:19px;
-    color:var(--navy);
-    border-left:4px solid var(--shu);
-    padding-left:12px;
-    margin:32px 0 14px;
-  }
-  .explainer p{font-size:14px; color:var(--ink-soft); margin:0 0 14px;}
-  .explainer ul{font-size:14px; color:var(--ink-soft); padding-left:20px; margin:0 0 14px;}
-  .explainer li{margin-bottom:6px;}
-
-  /* Lookup table */
-  .table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:0 -4px;}
-  table.rate-table{
-    width:100%;
-    min-width:560px;
-    border-collapse:collapse;
-    font-size:13px;
-  }
-  table.rate-table th, table.rate-table td{
-    padding:10px 12px;
-    text-align:right;
-    border-bottom:1px solid var(--line);
-    white-space:nowrap;
-  }
-  table.rate-table th:first-child, table.rate-table td:first-child{text-align:left;}
-  table.rate-table thead th{
-    background:var(--navy);
-    color:var(--gold-soft);
-    font-weight:700;
-    font-size:12px;
-  }
-  table.rate-table tbody tr:nth-child(even){background:var(--paper-deep);}
-  .table-note{font-size:12px; color:var(--ink-soft); margin-top:12px;}
-
-  /* FAQ */
-  .faq details{
-    border-bottom:1px solid var(--line);
-    padding:14px 2px;
-  }
-  .faq details:last-child{border-bottom:none;}
-  .faq summary{
-    font-size:14.5px;
-    font-weight:700;
-    color:var(--navy);
-    cursor:pointer;
-    list-style:none;
-    position:relative;
-    padding-right:24px;
-  }
-  .faq summary::-webkit-details-marker{display:none;}
-  .faq summary::after{
-    content:"+";
-    position:absolute;
-    right:0; top:0;
-    color:var(--shu);
-    font-weight:700;
-    font-size:16px;
-  }
-  .faq details[open] summary::after{content:"−";}
-  .faq details p{font-size:13.5px; color:var(--ink-soft); margin:10px 0 0;}
-
-  footer{
-    text-align:center;
-    font-size:11.5px;
-    color:var(--ink-soft);
-    padding:30px 20px 10px;
-  }
-  footer a{color:var(--ink-soft);}
-  footer a:hover{color:var(--shu);}
-
-  .footer-ad-note{
-    margin-bottom:8px;
-    color:var(--shu);
-    font-weight:700;
-  }
-
-  .top-notice{
-    background:var(--paper-deep);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:16px 18px;
-    font-size:13px;
-    color:var(--ink);
-    margin:0 0 24px;
-    line-height:1.7;
-  }
-  .top-notice strong{color:var(--shu);}
-
-  .field-note{
-    font-size:12.5px;
-    color:var(--ink-soft);
-    background:var(--paper-deep);
-    border-radius:var(--radius);
-    padding:10px 12px;
-    margin-top:10px;
-  }
-  .field-note strong{color:var(--navy);}
-
-  /* 詳細設定 */
-  details.adv summary{
-    cursor:pointer; font-size:13.5px; font-weight:700; color:var(--navy);
-    list-style:none; position:relative; padding:4px 0 4px 20px;
-  }
-  details.adv summary::-webkit-details-marker{display:none;}
-  details.adv summary::before{
-    content:"▸"; position:absolute; left:0; color:var(--shu); transition:transform .15s;
-  }
-  details.adv[open] summary::before{transform:rotate(90deg);}
-  details.adv .adv-body{padding-top:14px;}
-  .adv-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px 18px;}
-  @media(max-width:520px){.adv-grid{grid-template-columns:1fr;}}
-  .adv-grid label{font-size:12.5px; font-weight:700; display:block; margin-bottom:6px;}
-  .adv-grid .u-row{display:flex; align-items:center; gap:8px;}
-  .adv-note{font-size:12px; color:var(--ink-soft); margin-top:12px;}
-
-  /* 残り枠 */
-  .remain-box{
-    margin-top:22px; padding:16px 18px;
-    border:1px dashed var(--line); border-radius:var(--radius);
-    text-align:left; background:#fff;
-  }
-  .remain-box label{font-size:13px; font-weight:700; display:block; margin-bottom:8px;}
-  .remain-box .r-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
-  .remain-box input{max-width:180px;}
-  .remain-box .r-amount{font-family:'Shippori Mincho',serif; font-size:24px; color:var(--shu); font-weight:700; white-space:nowrap;}
-
-  /* 警告ノート */
-  .warn-note{
-    margin-top:14px; font-size:12.5px;
-    background:rgba(183,71,42,0.08); border:1px solid rgba(183,71,42,0.3);
-    border-radius:var(--radius); padding:12px 14px; text-align:left; color:var(--ink);
-    display:none;
-  }
-  .warn-note.show{display:block;}
-
-  /* 比較テーブル・サブボタン */
-  .affiliate-btn.sub{
-    background:#fff; color:var(--navy);
-    border:1.5px solid var(--line); box-shadow:none;
-    padding:12px 16px; max-width:200px; margin:8px 4px 0;
-    display:inline-block;
-  }
-  .affiliate-btn.sub:hover{border-color:var(--gold); transform:none; box-shadow:none;}
-  .updated-date{font-size:11.5px; color:var(--ink-soft); margin-top:6px;}
-
-  @media (max-width:480px){
-    .card{padding:24px 18px;}
-    .hanko{width:58px; height:58px; font-size:11px; top:16px; right:16px;}
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    .result.show, .result.show .hanko{animation:none; opacity:1; transform:none;}
-  }
+:root{--main:#ff8c42;--main-dark:#e6732a;--sub:#4a90a4;--bg:#fffaf3;--text:#3a3a3a;--card:#ffffff;--border:#f0e0cc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{background:linear-gradient(135deg,var(--main),#ffb347);color:#fff;padding:28px 0 24px;text-align:center}
+header h1{font-size:1.7rem;margin-bottom:6px}
+header p{font-size:.95rem;opacity:.95}
+nav{background:#fff;border-bottom:1px solid var(--border);padding:10px 0;text-align:center}
+nav a{color:var(--sub);text-decoration:none;margin:0 12px;font-size:.9rem}
+nav a:hover{text-decoration:underline}
+main{padding:28px 0 40px}
+.notice{background:#fff4e5;border:1px solid #ffd9a8;border-radius:10px;padding:12px 16px;font-size:.9rem;margin-bottom:24px}
+.tool{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.q{margin-bottom:22px}
+.q h2{font-size:1.05rem;margin-bottom:10px;color:var(--main-dark)}
+.q h2 span{display:inline-block;background:var(--main);color:#fff;border-radius:50%;width:26px;height:26px;text-align:center;line-height:26px;font-size:.9rem;margin-right:8px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{flex:1 1 130px;padding:12px 8px;border:2px solid var(--border);background:#fff;border-radius:10px;font-size:.95rem;cursor:pointer;transition:.15s}
+.opts button:hover{border-color:var(--main)}
+.opts button.sel{border-color:var(--main);background:#fff1e2;font-weight:bold}
+.opts button small{display:block;font-size:.75rem;color:#888;font-weight:normal}
+#goBtn{display:block;width:100%;padding:16px;margin-top:8px;background:var(--main);color:#fff;border:none;border-radius:12px;font-size:1.15rem;font-weight:bold;cursor:pointer}
+#goBtn:hover{background:var(--main-dark)}
+#result{margin-top:28px;display:none}
+#result h2{font-size:1.2rem;margin-bottom:4px;color:var(--main-dark)}
+#resultNote{font-size:.85rem;color:#777;margin-bottom:14px}
+.theme{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin-bottom:18px}
+.theme h3{font-size:1.15rem;color:var(--sub);margin-bottom:8px}
+.badges{margin-bottom:10px}
+.badge{display:inline-block;font-size:.75rem;padding:3px 10px;border-radius:20px;margin-right:6px;background:#eaf4f7;color:var(--sub)}
+.badge.days{background:#fff1e2;color:var(--main-dark)}
+.badge.lvl{background:#efe9f7;color:#7b5ea7}
+#allThemes details{background:#fff;border:1px solid var(--border);border-radius:10px;margin-bottom:10px}
+#allThemes summary{cursor:pointer;font-weight:bold;color:var(--main-dark);padding:12px 16px}
+.tlist{list-style:none;padding:4px 16px 12px}
+.tlist li{font-size:.9rem;border-top:1px dashed var(--border);padding:8px 0}
+.tlist li span{color:#888;font-size:.82rem}
+.theme p.desc{font-size:.95rem;margin-bottom:12px}
+.theme h4{font-size:.9rem;color:var(--main-dark);margin:12px 0 4px}
+.theme ol,.theme ul{padding-left:22px;font-size:.92rem}
+.matome{background:#f4fafc;border-radius:8px;padding:10px 14px;font-size:.9rem;margin-top:12px}
+#pager{display:flex;justify-content:center;gap:6px;margin-top:12px;flex-wrap:wrap}
+#pager button{min-width:42px;padding:10px 12px;background:#fff;color:var(--main-dark);border:2px solid var(--border);border-radius:10px;font-size:1rem;cursor:pointer}
+#pager button:hover{border-color:var(--main);background:#fff1e2}
+#pager button.cur{background:var(--main);color:#fff;border-color:var(--main);font-weight:bold}
+#pager button.next{border-color:var(--main);font-weight:bold}
+.adbox{margin-top:24px;padding:18px;background:#fff;border:1px solid var(--border);border-radius:12px;text-align:center}
+.adlabel{display:inline-block;font-size:.72rem;font-weight:bold;color:var(--main-dark);border:1px solid var(--main);padding:2px 10px;border-radius:20px;margin-bottom:10px}
+.adbox p{font-size:.9rem;margin-bottom:10px}
+.adbtn{display:inline-block;padding:13px 22px;background:#bf0000;color:#fff;font-weight:bold;text-decoration:none;border-radius:10px}
+.adbtn:hover{opacity:.9}
+.adnote{font-size:.75rem;color:#888;margin-top:10px;text-align:left}
+section.info{margin-top:40px}
+section.info h2{font-size:1.25rem;color:var(--main-dark);border-left:5px solid var(--main);padding-left:10px;margin-bottom:14px}
+.faq dt{font-weight:bold;margin-top:14px}
+.faq dt::before{content:"Q. ";color:var(--main)}
+.faq dd{margin-left:0}
+.faq dd::before{content:"A. ";color:var(--sub);font-weight:bold}
+.guide-links{list-style:none;padding:0}
+.guide-links li{margin-bottom:8px}
+.guide-links a{color:var(--sub)}
+footer{background:#4a4a4a;color:#ddd;padding:24px 0;text-align:center;font-size:.85rem;margin-top:40px}
+footer a{color:#ffd9a8;text-decoration:none;margin:0 8px}
+@media(max-width:600px){header h1{font-size:1.35rem}.tool{padding:16px}}
 </style>
 </head>
 <body>
+<header>
 <div class="wrap">
-
-  <header>
-    <div class="eyebrow">HOMETOWN TAX DONATION</div>
-    <h1>ふるさと納税<br>限度額シミュレーター</h1>
-    <p class="lead">年収と家族構成を入れるだけ。自己負担2,000円で寄付できる上限額の目安が、その場でわかります。</p>
-    <div class="brush-rule"></div>
-  </header>
-
-  <div class="top-notice">
-    <strong>入力するのは「あなた本人だけ」の年収です。</strong>配偶者や家族の年収と合算しないでください。ふるさと納税の限度額は、寄付をする本人1人分の所得をもとに計算する仕組みです。共働きのご夫婦は、お互いにそれぞれ自分の年収でこのシミュレーターを使い、別々に限度額を確認してください（世帯で1回計算するものではありません）。
-  </div>
-
-  <div class="card">
-    <h2><span class="num">1</span>あなた本人の年収を入力</h2>
-    <div class="field">
-      <label for="income">あなた本人の給与収入（額面・年収）<span class="hint">source: 源泉徴収票の「支払金額」</span></label>
-      <div class="income-row">
-        <input type="number" id="income" min="0" max="30000000" step="10" value="500">
-        <span class="unit">万円</span>
-      </div>
-      <input type="range" id="incomeRange" min="100" max="2000" step="10" value="500">
-      <div class="field-note">
-        <strong>ここに入れるのはあなた1人の年収です。</strong>配偶者の年収は含めません。共働きの場合、配偶者の分は合算せず、配偶者は配偶者自身でこのツールを使って別に計算してください。
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">2</span>配偶者について</h2>
-    <p style="font-size:12.5px;color:var(--ink-soft);margin-top:-10px;">ここでは「あなたが配偶者控除・配偶者特別控除を受けているかどうか」を選びます。共働きで配偶者の年収が一定額以上あり、控除を受けていない場合は「配偶者なし／共働き」を選んでください。</p>
-    <div class="field">
-      <label>配偶者控除・配偶者特別控除の適用</label>
-      <div class="seg" id="spouseSeg">
-        <button data-val="none" class="active">配偶者なし／共働き<br><span style="font-weight:400;font-size:11px;">（控除を受けていない）</span></button>
-        <button data-val="deduction">配偶者控除あり<br><span style="font-weight:400;font-size:11px;">（配偶者の年収が少ない）</span></button>
-      </div>
-      <div class="field-note">
-        判断に迷う場合は、源泉徴収票の「配偶者（特別）控除の額」欄に金額が入っていれば「配偶者控除あり」、空欄または0円なら「配偶者なし／共働き」を選んでください。
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">3</span>扶養しているお子さま</h2>
-    <p style="font-size:12.5px;color:var(--ink-soft);margin-top:-10px;">中学生以下のお子さまは控除額に影響しないため、カウント不要です。</p>
-    <div class="field">
-      <label>高校生（16〜18歳）の人数</label>
-      <div class="stepper-row">
-        <div class="stepper">
-          <button class="dec" data-target="hs">−</button>
-          <span class="count" id="hsCount">0</span>
-          <button class="inc" data-target="hs">＋</button>
-        </div>
-      </div>
-    </div>
-    <div class="field">
-      <label>大学生（19〜22歳・特定扶養親族）の人数</label>
-      <div class="stepper-row">
-        <div class="stepper">
-          <button class="dec" data-target="col">−</button>
-          <span class="count" id="colCount">0</span>
-          <button class="inc" data-target="col">＋</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">4</span>詳細設定（任意）</h2>
-    <p style="font-size:12.5px;color:var(--ink-soft);margin-top:-10px;">入力しなくても計算できます。iDeCoや医療費控除、住宅ローン控除がある方は、入力するとより実態に近い試算になります。</p>
-    <details class="adv">
-      <summary>詳細な控除を入力する（iDeCo・医療費控除・住宅ローン控除など）</summary>
-      <div class="adv-body">
-        <div class="adv-grid">
-          <div>
-            <label for="advShakai">社会保険料の実額（年間）</label>
-            <div class="u-row"><input type="number" id="advShakai" min="0" step="1" placeholder="未入力なら年収の15%で概算"><span class="unit">万円</span></div>
-          </div>
-          <div>
-            <label for="advIdeco">iDeCo・企業型DCの掛金（年間）</label>
-            <div class="u-row"><input type="number" id="advIdeco" min="0" step="1" placeholder="例: 27.6"><span class="unit">万円</span></div>
-          </div>
-          <div>
-            <label for="advIryohi">医療費控除の額</label>
-            <div class="u-row"><input type="number" id="advIryohi" min="0" step="1" placeholder="支払医療費−10万円が目安"><span class="unit">万円</span></div>
-          </div>
-          <div>
-            <label for="advHoken">生命保険料・地震保険料控除の合計</label>
-            <div class="u-row"><input type="number" id="advHoken" min="0" step="1" placeholder="例: 12"><span class="unit">万円</span></div>
-          </div>
-          <div>
-            <label for="advLoan">住宅ローン控除の年間控除額</label>
-            <div class="u-row"><input type="number" id="advLoan" min="0" step="1" placeholder="例: 21"><span class="unit">万円</span></div>
-          </div>
-          <div>
-            <label>控除の手続き方法（予定）</label>
-            <div class="seg" id="houhouSeg">
-              <button data-val="onestop" class="active">ワンストップ特例</button>
-              <button data-val="kakutei">確定申告</button>
-            </div>
-          </div>
-        </div>
-        <p class="adv-note">※生命保険料控除等は所得税と住民税で上限が異なりますが、本ツールでは同額として簡易計算しています。住宅ローン控除は「ワンストップ特例」を利用する場合、ふるさと納税の限度額に影響しません（<a href="guide-loan.html" style="color:var(--shu);">詳しい解説</a>）。</p>
-      </div>
-    </details>
-  </div>
-
-  <button class="calc-btn" id="calcBtn">限度額を計算する</button>
-
-  <div class="result" id="result">
-    <div class="hanko">目安<br>確定</div>
-    <div class="label">あなた本人の控除上限額（目安）</div>
-    <div class="amount" id="amountText">0<span>円</span></div>
-
-    <div class="breakdown">
-      <div class="row"><span>実質負担額</span><strong>2,000円</strong></div>
-      <div class="row"><span>所得税からの還付（目安）</span><strong id="incomeTaxRefund">0円</strong></div>
-      <div class="row"><span>住民税からの控除・基本分</span><strong id="residentBase">0円</strong></div>
-      <div class="row"><span>住民税からの控除・特例分</span><strong id="residentSpecial">0円</strong></div>
-    </div>
-
-    <div class="warn-note" id="warnNote"></div>
-
-    <div class="note">
-      ※本ツールは給与所得者向けの簡易試算です。社会保険料は未入力の場合、年収の15%と仮定して概算します。iDeCo・医療費控除・住宅ローン控除などがある方は「詳細設定」で反映できます。正確な金額は寄付翌年に市区町村へご確認いただくか、税理士にご相談ください。計算式と前提は<a href="method.html" style="color:var(--shu);">計算方法の解説ページ</a>で公開しています。
-    </div>
-
-    <div class="remain-box">
-      <label for="donated">今年すでに寄付した金額を入れると「残り枠」がわかります</label>
-      <div class="r-row">
-        <input type="number" id="donated" min="0" step="1000" placeholder="例: 30000">
-        <span class="unit">円</span>
-        <span style="font-size:13px;color:var(--ink-soft);">→ 残り枠</span>
-        <span class="r-amount" id="remainText">−</span>
-      </div>
-    </div>
-
-    <div class="affiliate-box">
-      <div class="affiliate-label">広告・PR</div>
-      <p style="font-size:12.5px;color:var(--ink-soft);text-align:left;margin:0 0 12px;">2025年10月から、ポータルサイト独自のポイント付与は制度改正により全サイトで禁止されました。現在は「ポイントのお得さ」に差はないため、使いやすさや返礼品の品ぞろえで選ぶのがおすすめです。</p>
-      <div class="table-scroll">
-        <table class="rate-table" style="min-width:480px;">
-          <thead><tr><th>サイト</th><th style="text-align:left;">特徴</th></tr></thead>
-          <tbody>
-            <tr><td>楽天ふるさと納税</td><td style="text-align:left;white-space:normal;">楽天市場と同じ操作感で寄付できる。楽天IDがあれば住所入力等が不要で手軽</td></tr>
-            <tr><td>さとふる</td><td style="text-align:left;white-space:normal;">配送時期の目安表示など管理機能が充実。アプリで寄付履歴を一元管理しやすい</td></tr>
-            <tr><td>ふるなび</td><td style="text-align:left;white-space:normal;">家電・日用品系の返礼品の掲載に強みがあるとされる</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <a
-        class="affiliate-btn"
-        href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffurusato%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
-        target="_blank"
-        rel="nofollow sponsored noopener"
-        style="margin-top:14px;"
-      >
-        楽天ふるさと納税で返礼品を探す
-      </a>
-      <div class="affiliate-note">
-        ※当サイトはアフィリエイト広告を利用しています。リンク先で寄付や申込みが行われた場合、当サイトに報酬が発生することがあります。
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>年収・家族構成別 限度額早見表</h2>
-    <p style="font-size:13px;color:var(--ink-soft);margin:-10px 0 18px;">上のシミュレーターと同じ計算式で算出した目安です。ご自身の条件に近い行を確認する際の参考にしてください。<strong>「年収」は表中のすべての区分で「あなた本人」の年収を指します（配偶者と合算しません）。</strong></p>
-    <div class="table-scroll">
-      <table class="rate-table">
-        <thead>
-          <tr>
-            <th>年収（額面）</th>
-            <th>独身・共働き</th>
-            <th>夫婦<br>（配偶者控除あり）</th>
-            <th>夫婦+子1人<br>（高校生）</th>
-            <th>夫婦+子2人<br>（高校生+大学生）</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>300万円</td><td>28,000円</td><td>21,000円</td><td>13,000円</td><td>−</td></tr>
-          <tr><td>400万円</td><td>42,000円</td><td>34,000円</td><td>27,000円</td><td>16,000円</td></tr>
-          <tr><td>500万円</td><td>61,000円</td><td>50,000円</td><td>42,000円</td><td>31,000円</td></tr>
-          <tr><td>600万円</td><td>77,000円</td><td>69,000円</td><td>61,000円</td><td>47,000円</td></tr>
-          <tr><td>700万円</td><td>108,000円</td><td>86,000円</td><td>78,000円</td><td>67,000円</td></tr>
-          <tr><td>800万円</td><td>130,000円</td><td>121,000円</td><td>111,000円</td><td>86,000円</td></tr>
-          <tr><td>900万円</td><td>153,000円</td><td>143,000円</td><td>134,000円</td><td>121,000円</td></tr>
-          <tr><td>1,000万円</td><td>177,000円</td><td>168,000円</td><td>158,000円</td><td>146,000円</td></tr>
-          <tr><td>1,200万円</td><td>237,000円</td><td>227,000円</td><td>207,000円</td><td>194,000円</td></tr>
-          <tr><td>1,500万円</td><td>370,000円</td><td>358,000円</td><td>346,000円</td><td>280,000円</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="table-note">※令和8年分（2026年）税制（基礎控除・給与所得控除の引き上げ改正）に基づく概算です。社会保険料控除は年収の15%と仮定しています。「−」は課税所得が小さく、自己負担2,000円で寄付できる枠がほぼない場合です。iDeCo・医療費控除・住宅ローン控除などがある場合は、上のシミュレーターの「詳細設定」で反映してご確認ください。</p>
-  </div>
-
-  <div class="explainer">
-    <h3>限度額はどうやって決まるの？</h3>
-    <p>ふるさと納税で「実質自己負担2,000円」に収まるのは、寄付額のうち2,000円を超える部分が所得税の還付と翌年の住民税の控除でまかなわれるからです。控除には上限があり、それを超えて寄付すると超過分がそのまま自己負担になります。上限額は、年収から計算した住民税所得割額と、あなたの所得税率によって決まります。</p>
-
-    <h3>家族構成で上限額が変わる理由</h3>
-    <p>配偶者控除や扶養控除が増えるほど課税所得が下がり、納める税金も少なくなります。納税額が少なくなれば、その分ふるさと納税で控除できる枠（上限額）も小さくなります。同じ年収でも独身の方より、配偶者や扶養家族がいる方の方が上限額は低くなる傾向があります。</p>
-
-    <h3>寄付するときの注意点</h3>
-    <ul>
-      <li>限度額ぎりぎりまで寄付すると、ボーナス減額や急な医療費控除の発生などで上限が下振れした場合、超過分が自己負担になるリスクがあります。目安としては上限の90〜95%程度に抑えるのが安全です。</li>
-      <li>控除を受けるには「<a href="guide-onestop.html">ワンストップ特例制度</a>」（寄付先が年間5自治体以内）か「<a href="guide-kakuteishinkoku.html">確定申告</a>」のいずれかの手続きが必要です。</li>
-      <li>限度額はその年（1月〜12月）の所得で決まるため、年収が確定していない年の途中では、あくまで見込みでの試算になります。詳しくは<a href="guide-schedule.html">寄付のスケジュールガイド</a>をご覧ください。</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>もっと詳しく知りたい方へ</h2>
-    <p style="font-size:13px;color:var(--ink-soft);margin:-10px 0 14px;">手続きやスケジュール、注意点を詳しく解説したガイド記事はこちらです。</p>
-    <ul style="font-size:14px;color:var(--ink-soft);padding-left:20px;margin:0;">
-      <li style="margin-bottom:8px;"><a href="guide-onestop.html">ワンストップ特例制度の申請方法・期限・書き方ガイド</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-kakuteishinkoku.html">ふるさと納税の確定申告のやり方・必要書類ガイド</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-schedule.html">ふるさと納税はいつまで？年内に済ませるべきこと</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-shokugyo.html">会社員・公務員・自営業者別 限度額の考え方の違い</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-chuui.html">ふるさと納税のデメリット・よくある失敗まとめ</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-loan.html">住宅ローン控除とふるさと納税は併用できる？限度額への影響</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-ideco.html">iDeCo・企業型DCとふるさと納税の併用と限度額の変化</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-tenshoku.html">転職・退職・育休の年のふるさと納税はどうする？</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-kaisei.html">減税でふるさと納税の限度額は増えた？税制改正の影響を試算</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-wasureta.html">ワンストップ特例の申請を忘れたときの対処法</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-kakunin.html">ちゃんと控除されたか確認する方法（住民税決定通知書の見方）</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-tomobataraki.html">共働き夫婦のよくある失敗5つ</a></li>
-      <li style="margin-bottom:8px;"><a href="guide-henreihin.html">返礼品の選び方と「還元率」の考え方</a></li>
-      <li><a href="method.html">本シミュレーターの計算方法と前提（計算式の全公開）</a></li>
-    </ul>
-  </div>
-
-  <div class="card faq">
-    <h2>よくある質問</h2>
-
-    <details>
-      <summary>限度額を超えて寄付するとどうなりますか？</summary>
-      <p>限度額（上限額）を超えた部分は控除の対象にならず、寄付した自治体への純粋な寄付（自己負担）扱いになります。たとえば限度額が5万円の方が10万円寄付した場合、超過した5万円分は控除されず自己負担が増えます。返礼品はもらえますが、税金がお得になる範囲を超えている点に注意してください。</p>
-    </details>
-
-    <details>
-      <summary>ワンストップ特例制度と確定申告、どちらを選べばいいですか？</summary>
-      <p>会社員などもともと確定申告が不要な方で、1年間の寄付先が5自治体以内であれば「ワンストップ特例制度」が手続き不要で簡単です。一方、6自治体以上に寄付する場合、医療費控除など他の申告もあわせて行う場合、個人事業主の方などは「確定申告」で寄付金控除を申請します。ワンストップ特例は住民税からまとめて控除される点、確定申告は所得税の還付と住民税の控除に分かれる点が異なります。詳しい手順は<a href="guide-onestop.html">ワンストップ特例ガイド</a>・<a href="guide-kakuteishinkoku.html">確定申告ガイド</a>をご覧ください。</p>
-    </details>
-
-    <details>
-      <summary>年の途中で転職・退職した場合、限度額はどう考えればいいですか？</summary>
-      <p>限度額はその年1月〜12月の所得が確定して初めて正確に分かります。年の途中で転職・退職・ボーナス減額などがあると年収の見込みが変わるため、限度額も変動します。年の前半に見込みで寄付する場合は、限度額の90%程度に抑えるなど余裕を持たせるのが安全です。年収が概ね確定する年末に近づいてから、残りの枠を寄付するという進め方もあります。詳しくは<a href="guide-schedule.html">寄付のスケジュールガイド</a>をご覧ください。</p>
-    </details>
-
-    <details>
-      <summary>共働き夫婦の場合、限度額はどのように計算しますか？</summary>
-      <p>ふるさと納税の限度額は世帯ではなく個人単位で計算します。共働きで配偶者控除の対象になっていない場合は、それぞれが自分の年収・扶養状況をもとに個別にシミュレーションを行ってください。本ツールでも「配偶者なし／共働き」を選択することで、控除を受けていない前提の試算になります。職業別の考え方は<a href="guide-shokugyo.html">こちらの記事</a>もご参考ください。</p>
-    </details>
-
-    <details>
-      <summary>住宅ローン控除やiDeCoを利用している場合、限度額は変わりますか？</summary>
-      <p>変わります。iDeCoの掛金控除や医療費控除などがあると課税所得が下がるため、限度額も少なくなります。本ツールの「詳細設定（任意）」にこれらの金額を入力すると、反映した試算ができます。なお住宅ローン控除は、ワンストップ特例を使う場合は限度額に影響せず、確定申告をする場合のみ影響することがあります。詳しくは<a href="guide-loan.html">住宅ローン控除との併用ガイド</a>・<a href="guide-ideco.html">iDeCoとの併用ガイド</a>をご覧ください。</p>
-    </details>
-
-    <details>
-      <summary>限度額ギリギリまで寄付しても大丈夫ですか？</summary>
-      <p>可能ですが、リスクもあります。想定より賞与が減った、医療費控除を追加で申告した、扶養状況が変わったなどの理由で実際の限度額が下振れすると、超過分が自己負担になります。特に年の前半〜中盤に寄付する場合は、算出額の90〜95%程度を目安にすると安心です。</p>
-    </details>
-
-    <details>
-      <summary>このシミュレーターの計算はいつの税制に基づいていますか？</summary>
-      <p>2026年（令和8年）分の税制に基づいて試算しています。2025〜2026年の税制改正で引き上げられた基礎控除（本則62万円+所得に応じた上乗せ特例）と給与所得控除（最低保障74万円）を反映済みです。住民税の基礎控除は43万円のまま据え置かれています。計算式の詳細は<a href="method.html">計算方法の解説ページ</a>で公開しています。</p>
-    </details>
-
-    <details>
-      <summary>本サイトの試算結果は確実な金額ですか？</summary>
-      <p>いいえ、あくまで簡易的な目安です。社会保険料控除は未入力の場合に年収の15%と仮定するなど、一定の前提を置いています（詳細設定で実額を反映できます）。正確な限度額は、寄付翌年にお住まいの市区町村へ確認するか、税理士にご相談ください。前提と計算式は<a href="method.html">計算方法の解説ページ</a>、注意事項は<a href="disclaimer.html">免責事項</a>をご覧ください。</p>
-    </details>
-  </div>
-
-  <footer>
-    <div class="footer-ad-note">※当サイトはアフィリエイト広告を利用しています。</div>
-    本シミュレーターの試算結果は目安であり、金額を保証するものではありません。2026年（令和8年）分の税制（基礎控除・給与所得控除の改正反映）に基づき試算しています。<br>
-    <a href="guide.html">関連記事</a> ・ <a href="method.html">計算方法</a> ・ <a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a> ・ <a href="disclaimer.html">免責事項</a> ・ <a href="contact.html">お問い合わせ</a>
-    <div class="updated-date">最終更新日: 2026年7月8日</div>
-  </footer>
-
+<h1>🔬 自由研究テーマ診断</h1>
+<p>学年・興味・日数を選ぶだけ。あなたにぴったりの自由研究が見つかる無料ツール</p>
+</div>
+</header>
+<nav>
+<div class="wrap">
+<a href="./">診断ツール</a><a href="themes.html">テーマ一覧</a><a href="guide.html">自由研究ガイド</a><a href="about.html">運営者情報</a><a href="contact.html">お問い合わせ</a>
+</div>
+</nav>
+<main>
+<div class="wrap">
+<div class="notice">登録不要・完全無料。選んだ内容はサーバーに送信されず、この画面の中だけで診断されます。</div>
+<div class="tool">
+<div class="q">
+<h2><span>1</span>学年をえらんでね</h2>
+<div class="opts" id="qGrade">
+<button data-v="e12">小学1・2年生</button>
+<button data-v="e34">小学3・4年生</button>
+<button data-v="e56">小学5・6年生</button>
+<button data-v="jhs">中学生</button>
+</div>
+</div>
+<div class="q">
+<h2><span>2</span>すきなこと・気になることは？</h2>
+<div class="opts" id="qGenre">
+<button data-v="sci">理科実験<small>まぜる・とかす・ためす</small></button>
+<button data-v="nat">生き物・自然<small>虫・植物・空・星</small></button>
+<button data-v="cra">工作・ものづくり<small>作る・組み立てる</small></button>
+<button data-v="coo">料理・食べ物<small>キッチンでできる</small></button>
+<button data-v="res">調べ学習<small>地図・歴史・社会</small></button>
+<button data-v="it">プログラミング・IT<small>パソコン・タブレット</small></button>
+</div>
+</div>
+<div class="q">
+<h2><span>3</span>何日くらいかけられる？</h2>
+<div class="opts" id="qDays">
+<button data-v="1">1日で終わらせたい</button>
+<button data-v="3">2〜3日ならOK</button>
+<button data-v="7">1週間以上かけてじっくり</button>
+</div>
+</div>
+<button id="goBtn">診断する！</button>
+<div id="result">
+<h2>あなたにおすすめの自由研究</h2>
+<p id="resultNote"></p>
+<div id="themes"></div>
+<div id="pager"></div>
+<div class="adbox">
+<span class="adlabel">広告・PR</span>
+<p id="adLead">実験キットや工作の材料は、楽天市場でまとめてそろえられます。</p>
+<div id="adBody"><a class="adbtn" href="https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%2587%25AA%25E7%2594%25B1%25E7%25A0%2594%25E7%25A9%25B6%2B%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener">楽天市場で「自由研究キット」を探す</a></div>
+<p class="adnote">※当サイトはアフィリエイト広告を利用しています。リンク先で購入があった場合、当サイトに紹介料が支払われることがあります。</p>
+</div>
+</div>
 </div>
 
+<section class="info">
+<h2>自由研究の進め方ガイド</h2>
+<p>テーマが決まったら、次は進め方とまとめ方です。詳しい記事を用意しています。</p>
+<ul class="guide-links">
+<li><a href="guide-schedule.html">自由研究の進め方とスケジュールの立て方</a></li>
+<li><a href="guide-matome.html">まとめ方テンプレート（模造紙・ノート・レポート）</a></li>
+<li><a href="guide-oneday.html">1日で終わる自由研究アイデア集</a></li>
+<li><a href="guide-gakunen.html">学年別・自由研究テーマの選び方</a></li>
+<li><a href="guide-support.html">親はどこまで手伝う？サポートのコツ</a></li>
+<li><a href="guide-kimekata.html">テーマが決まらないときの決め方</a></li>
+<li><a href="guide-photo.html">自由研究の写真の撮り方</a></li>
+<li><a href="guide-note.html">観察ノート・実験記録の書き方</a></li>
+<li><a href="guide-scratch.html">Scratchで自由研究をする方法</a></li>
+<li><a href="guide-pg-matome.html">プログラミング自由研究のまとめ方</a></li>
+</ul>
+</section>
+
+<section class="info">
+<h2>収録テーマ一覧</h2>
+<p style="margin-bottom:10px">学年・日数つきの見やすい表は<a href="themes.html" style="color:var(--sub)">テーマ一覧ページ（全テーマ掲載）</a>にもまとめています。</p>
+<p id="allThemesIntro"></p>
+<div id="allThemes"></div>
+</section>
+
+<section class="info">
+<h2>よくある質問</h2>
+<dl class="faq">
+<dt>診断は何回でも使えますか？</dt>
+<dd>はい、何回でも無料で使えます。診断結果は3件ずつのページに分かれていて、結果の下のページ番号（1・2・3…）や「次へ」ボタンで、すべての候補を見られます。</dd>
+<dt>テーマはそのまま学校に提出できますか？</dt>
+<dd>テーマと手順はあくまで出発点です。実際に自分でやってみて、気づいたことや失敗も含めて記録すると、オリジナルの研究になります。</dd>
+<dt>入力した内容はどこかに送られますか？</dt>
+<dd>いいえ。診断はブラウザの中だけで動いていて、選んだ内容が外部に送信されることはありません。</dd>
+<dt>火や刃物を使うテーマもありますか？</dt>
+<dd>一部のテーマでは加熱や刃物を使います。テーマ内に注意書きを入れていますが、必ずおうちの人と一緒に、安全に気をつけて行ってください。</dd>
+</dl>
+</section>
+</div>
+</main>
+<footer>
+<div class="wrap">
+<p><a href="./">ホーム</a><a href="guide.html">ガイド</a><a href="about.html">運営者情報</a><a href="contact.html">お問い合わせ</a><a href="privacy.html">プライバシーポリシー</a><a href="disclaimer.html">免責事項</a></p>
+<p>&copy; 2026 自由研究テーマ診断</p>
+</div>
+</footer>
 <script>
-(function(){
-  const incomeInput = document.getElementById('income');
-  const incomeRange = document.getElementById('incomeRange');
-  const spouseSeg = document.getElementById('spouseSeg');
-  const calcBtn = document.getElementById('calcBtn');
-  const result = document.getElementById('result');
-
-  let spouseVal = 'none';
-  let hsCount = 0;
-  let colCount = 0;
-  let houhouVal = 'onestop';
-
-  // sync income input <-> range
-  incomeInput.addEventListener('input', () => {
-    incomeRange.value = Math.min(Math.max(incomeInput.value, 100), 2000);
-  });
-  incomeRange.addEventListener('input', () => {
-    incomeInput.value = incomeRange.value;
-  });
-
-  // spouse segmented control
-  spouseSeg.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      spouseSeg.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      spouseVal = btn.dataset.val;
-    });
-  });
-
-  // 申告方法 segmented control
-  const houhouSeg = document.getElementById('houhouSeg');
-  houhouSeg.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      houhouSeg.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      houhouVal = btn.dataset.val;
-    });
-  });
-
-  // steppers
-  document.querySelectorAll('.stepper button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.target;
-      const isInc = btn.classList.contains('inc');
-      if(target === 'hs'){
-        hsCount = Math.max(0, Math.min(6, hsCount + (isInc ? 1 : -1)));
-        document.getElementById('hsCount').textContent = hsCount;
-      } else {
-        colCount = Math.max(0, Math.min(6, colCount + (isInc ? 1 : -1)));
-        document.getElementById('colCount').textContent = colCount;
-      }
-    });
-  });
-
-  // ===== 令和8年分（2026年）税制 =====
-  // 給与所得控除（最低保障74万円 = 本則69万円+特例5万円）
-  function kyuyoKoujo(income){
-    let k;
-    if(income <= 3600000) k = income*0.3 + 80000;
-    else if(income <= 6600000) k = income*0.2 + 440000;
-    else if(income <= 8500000) k = income*0.1 + 1100000;
-    else k = 1950000;
-    k = Math.max(k, 740000);
-    return Math.min(k, income);
-  }
-
-  // 所得税の基礎控除（本則62万円+所得に応じた上乗せ特例）
-  function kisoShotokuzei(gokeiShotoku){
-    if(gokeiShotoku <= 1320000) return 1040000;
-    if(gokeiShotoku <= 3360000) return 920000;
-    if(gokeiShotoku <= 4890000) return 720000;
-    if(gokeiShotoku <= 6550000) return 670000;
-    if(gokeiShotoku <= 23500000) return 620000;
-    if(gokeiShotoku <= 24000000) return 480000;
-    if(gokeiShotoku <= 24500000) return 320000;
-    if(gokeiShotoku <= 25000000) return 160000;
-    return 0;
-  }
-
-  // 所得税の速算表 [税率, 控除額]
-  function zeiritsuTable(k){
-    if(k <= 1950000) return [0.05, 0];
-    if(k <= 3300000) return [0.10, 97500];
-    if(k <= 6950000) return [0.20, 427500];
-    if(k <= 9000000) return [0.23, 636000];
-    if(k <= 18000000) return [0.33, 1536000];
-    if(k <= 40000000) return [0.40, 2796000];
-    return [0.45, 4796000];
-  }
-
-  function manYen(id){
-    const v = parseFloat(document.getElementById(id).value);
-    return (isFinite(v) && v > 0) ? v*10000 : 0;
-  }
-
-  let lastGendogaku = 0;
-
-  function calculate(){
-    const incomeMan = parseFloat(incomeInput.value) || 0;
-    const income = incomeMan * 10000; // yen
-
-    if(income <= 0){
-      alert('年収を入力してください');
-      return;
-    }
-
-    // 詳細設定
-    const shakaiJitsu = manYen('advShakai');
-    const shakaihoken = shakaiJitsu > 0 ? shakaiJitsu : income * 0.15;
-    const sonotaKoujo = manYen('advIdeco') + manYen('advIryohi') + manYen('advHoken');
-    const loanCredit = manYen('advLoan');
-
-    const kyuyoShotoku = income - kyuyoKoujo(income);
-
-    // 住民税ベース（基礎控除43万円）
-    const kojoJ = 430000 + shakaihoken + (spouseVal==='deduction'?330000:0) + hsCount*330000 + colCount*450000 + sonotaKoujo;
-    const kazeiJ = Math.max(0, kyuyoShotoku - kojoJ);
-    const juminwari = kazeiJ * 0.10;
-
-    // 所得税ベース
-    const kojoS = kisoShotokuzei(kyuyoShotoku) + shakaihoken + (spouseVal==='deduction'?380000:0) + hsCount*380000 + colCount*630000 + sonotaKoujo;
-    const kazeiS = Math.max(0, kyuyoShotoku - kojoS);
-    const zt = zeiritsuTable(kazeiS);
-    const t = zt[0];
-    const shotokuzeigaku = Math.max(0, kazeiS*t - zt[1]);
-
-    // 住宅ローン控除: 確定申告の場合のみ所得税の還付枠を圧迫（ワンストップは影響なし）
-    function gendo(houhou, loan){
-      const avail = (houhou === 'kakutei') ? Math.max(0, shotokuzeigaku - loan) : Infinity;
-      function selfBurden(X){
-        const kifu = Math.max(0, X - 2000);
-        const refund = Math.min(kifu * t * 1.021, avail);
-        const base = kifu * 0.10;
-        const tokurei = Math.min(kifu * (0.9 - t*1.021), juminwari * 0.2);
-        return X - (refund + base + tokurei);
-      }
-      let lo = 2000, hi = 20000000;
-      for(let i=0; i<60; i++){
-        const mid = (lo+hi)/2;
-        if(selfBurden(mid) <= 2000.5) lo = mid; else hi = mid;
-      }
-      let g = Math.floor(lo/1000)*1000;
-      if(g <= 2000) g = 0;
-      const kifu = Math.max(0, g - 2000);
-      return {
-        gen: g,
-        refund: Math.round(Math.min(kifu*t*1.021, avail)),
-        base: Math.round(kifu*0.10),
-        tokurei: Math.round(Math.min(kifu*(0.9 - t*1.021), juminwari*0.2))
-      };
-    }
-
-    const r = gendo(houhouVal, loanCredit);
-    lastGendogaku = r.gen;
-
-    document.getElementById('amountText').innerHTML = r.gen.toLocaleString() + '<span>円</span>';
-    document.getElementById('incomeTaxRefund').textContent = (houhouVal==='onestop' ? '（住民税から一括控除）' : r.refund.toLocaleString() + '円');
-    document.getElementById('residentBase').textContent = r.base.toLocaleString() + '円';
-    document.getElementById('residentSpecial').textContent = r.tokurei.toLocaleString() + '円';
-
-    // 住宅ローン控除の影響アラート
-    const warn = document.getElementById('warnNote');
-    warn.classList.remove('show');
-    if(houhouVal === 'kakutei' && loanCredit > 0){
-      const rOS = gendo('onestop', 0);
-      if(r.gen < rOS.gen){
-        warn.innerHTML = '<strong>住宅ローン控除の影響で、確定申告の場合の上限が下がっています。</strong>寄付先が5自治体以内で、ほかに確定申告する理由がなければ「ワンストップ特例」を使うことでこの影響を避けられます（その場合の上限目安: ' + rOS.gen.toLocaleString() + '円）。詳しくは<a href="guide-loan.html" style="color:var(--shu);">住宅ローン控除との併用ガイド</a>をご覧ください。';
-        warn.classList.add('show');
-      }
-    }
-
-    updateRemain();
-
-    result.classList.remove('show');
-    void result.offsetWidth; // reflow to restart animation
-    result.classList.add('show');
-    result.scrollIntoView({behavior:'smooth', block:'center'});
-  }
-
-  // 残り枠
-  function updateRemain(){
-    const donated = parseFloat(document.getElementById('donated').value) || 0;
-    const el = document.getElementById('remainText');
-    if(lastGendogaku <= 0 || donated <= 0){
-      el.textContent = donated > 0 && lastGendogaku <= 0 ? '−' : (lastGendogaku > 0 ? lastGendogaku.toLocaleString() + '円' : '−');
-      return;
-    }
-    el.textContent = Math.max(0, lastGendogaku - donated).toLocaleString() + '円';
-  }
-  document.getElementById('donated').addEventListener('input', updateRemain);
-
-  calcBtn.addEventListener('click', calculate);
-})();
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "限度額を超えて寄付するとどうなりますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "限度額（上限額）を超えた部分は控除の対象にならず、寄付した自治体への純粋な寄付（自己負担）扱いになります。返礼品はもらえますが、税金がお得になる範囲を超えている点に注意してください。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ワンストップ特例制度と確定申告、どちらを選べばいいですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "会社員などもともと確定申告が不要な方で、1年間の寄付先が5自治体以内であればワンストップ特例制度が手続き不要で簡単です。6自治体以上に寄付する場合や他の申告もあわせて行う場合は確定申告で寄付金控除を申請します。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "年の途中で転職・退職した場合、限度額はどう考えればいいですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "限度額はその年1月〜12月の所得が確定して初めて正確に分かります。年の前半に見込みで寄付する場合は限度額の90%程度に抑えるなど余裕を持たせるのが安全です。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "共働き夫婦の場合、限度額はどのように計算しますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ふるさと納税の限度額は世帯ではなく個人単位で計算します。配偶者控除の対象になっていない場合は、それぞれが自分の年収・扶養状況をもとに個別にシミュレーションを行ってください。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "住宅ローン控除やiDeCoを利用している場合、限度額は変わりますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "変わります。iDeCoや医療費控除などは本ツールの詳細設定に入力すると反映した試算ができます。住宅ローン控除はワンストップ特例を使う場合は限度額に影響せず、確定申告をする場合のみ影響することがあります。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "限度額ギリギリまで寄付しても大丈夫ですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "可能ですがリスクもあります。賞与の減少や控除内容の変化で実際の限度額が下振れすると超過分が自己負担になるため、算出額の90〜95%程度を目安にすると安心です。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "このシミュレーターの計算はいつの税制に基づいていますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "2026年（令和8年）分の税制に基づいて試算しています。2025〜2026年の税制改正で引き上げられた基礎控除と給与所得控除（最低保障74万円）を反映済みです。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "本サイトの試算結果は確実な金額ですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "いいえ、あくまで簡易的な目安です。社会保険料控除は年収の15%と仮定するなど一定の前提を置いており、正確な金額は市区町村への確認や税理士への相談をおすすめします。"
-      }
-    }
-  ]
+const DB=[
+{t:"10円玉ピカピカ実験",c:"sci",g:[1,4],d:1,desc:"レモン汁・お酢・ソース・ケチャップなど身近な調味料で、10円玉の汚れがどれだけ落ちるか比べる定番実験。",steps:["くもった10円玉を6枚くらい用意する","小皿に調味料を入れ、10円玉を半分だけひたす","10分後に取り出して、ひたした部分と比べる","どれが一番ピカピカになったか順位をつける"],mat:["10円玉","レモン汁・お酢・ソースなどの調味料","小皿","ティッシュ"],matome:"実験前と後の写真を並べて、「酸っぱいものほど落ちる」など気づいたことを書くと◎"},
+{t:"塩の結晶づくり",c:"sci",g:[3,9],d:7,desc:"濃い塩水をゆっくり蒸発させて、キラキラの結晶を育てる。毎日の変化を記録する観察型の実験。",steps:["お湯に塩をとけなくなるまでとかす（飽和食塩水）","糸にクリップを結び、割りばしからつるして液にひたす","ほこりが入らないよう紙をかぶせ、涼しい場所に置く","毎日同じ時間に大きさをはかって記録する"],mat:["塩","耐熱コップ","糸・クリップ・割りばし","定規・カメラ"],matome:"毎日の写真＋大きさのグラフをつけると成長が一目でわかる。※お湯を使うのでやけどに注意"},
+{t:"ペットボトルで雲をつくる",c:"sci",g:[3,6],d:1,desc:"炭酸用ペットボトルの中に、本物の雲を発生させる実験。気圧と温度の関係が体感できる。",steps:["ペットボトルに少量のぬるま湯と線香のけむりを入れる","ふたをしめて、ボトルを強くへこませる","手をパッとはなして、中が白くくもるか観察する","お湯なし・けむりなしでも試して比べる"],mat:["炭酸用ペットボトル","ぬるま湯","線香（おうちの人と使う）"],matome:"「へこませる→はなす」で何が起きたかを図で説明すると本格的。※線香は大人と一緒に"},
+{t:"野菜からDNAを取り出す",c:"sci",g:[5,9],d:1,desc:"ブロッコリーをすりつぶし、台所にあるものだけでDNAを目に見える形で取り出す本格実験。",steps:["ブロッコリーのつぼみをすりつぶす","水・塩・台所用洗剤を混ぜた液に入れて10分待つ","茶こしでこして、上澄みをコップに入れる","冷やしたエタノールを静かに注ぎ、白いモヤ（DNA）を観察"],mat:["ブロッコリー","台所用洗剤・塩","消毒用エタノール","茶こし・コップ"],matome:"DNAとは何かを図書館やネットで調べて1ページ添えると、実験＋調べ学習の合わせ技に"},
+{t:"ムラサキキャベツで色が変わる液性実験",c:"sci",g:[4,9],d:1,desc:"ムラサキキャベツの煮汁は、酸性・アルカリ性で色が変わる天然の指示薬。家中の液体を調べられる。",steps:["ムラサキキャベツを刻んで煮て、紫色の液を作る","透明カップに液を分け、レモン汁・石けん水・炭酸水などを入れる","色の変化を記録し、酸性〜アルカリ性の順に並べる"],mat:["ムラサキキャベツ","鍋（加熱はおうちの人と）","透明カップ","調べたい液体いろいろ"],matome:"カップを色の順に並べた写真＋「色見本表」を作ると見た目のインパクト大"},
+{t:"氷のとけ方くらべ",c:"sci",g:[1,4],d:1,desc:"同じ氷に塩・砂糖・何もなし、と条件を変えて、どれが早くとけるか競争させるシンプル実験。",steps:["同じ大きさの氷を3つ用意する","1つは塩、1つは砂糖をかけ、1つはそのまま置く","5分ごとにようすを観察して記録する","とけおわった順番を発表する"],mat:["氷3つ","塩・砂糖","お皿3枚","時計"],matome:"5分ごとの絵日記ふうの記録がおすすめ。「どうして塩だと早いの？」の予想も書こう"},
+{t:"パンのカビ観察実験",c:"sci",g:[4,9],d:7,desc:"置き場所（冷蔵庫・日なた・日かげ）で、パンにカビが生えるスピードがどう変わるかを比べる。",steps:["食パンを3枚用意し、透明袋に入れて密封する","冷蔵庫・日なた・日かげに1枚ずつ置く","毎日カビのようすを写真と言葉で記録する","1週間後に結果を比べる（袋は絶対に開けない）"],mat:["食パン3枚","チャック付き透明袋","カメラ"],matome:"観察が終わったら袋のまま捨てること。温度・湿度とカビの関係を考察に書くと高評価"},
+{t:"水の温度ととける量の実験",c:"sci",g:[5,9],d:3,desc:"冷水・常温・お湯で、塩や砂糖がとける量はどう変わる？を数字で調べる、データ重視の実験。",steps:["同じ量の水を3つの温度で用意する","小さじ1ずつ塩を入れてかき混ぜ、とけなくなるまでの杯数を数える","砂糖でも同じことをする","温度ごとの結果を表とグラフにする"],mat:["塩・砂糖","計量スプーン・カップ","温度計","記録用紙"],matome:"棒グラフにすると差がはっきり。「温度が高いほど〜」と自分の言葉で結論を書こう"},
+{t:"アリの行列大研究",c:"nat",g:[1,4],d:3,desc:"アリはどんな食べ物に集まる？行列はどう続く？身近なアリを2〜3日かけて追いかける観察研究。",steps:["庭や公園でアリの巣を見つける","砂糖・塩・パンくずなどを少しずつ置いて、どれに集まるか観察","行列の道すじを紙にスケッチする","日をかえて同じ実験をして比べる"],mat:["砂糖・塩などのエサ","スケッチ用の紙とえんぴつ","虫めがね"],matome:"「アリが好きなものランキング」を作ると楽しいまとめに。観察は涼しい時間帯に"},
+{t:"セミのぬけがらマップ",c:"nat",g:[1,6],d:3,desc:"近所の公園でセミのぬけがらを集めて、種類と見つけた場所を地図にまとめるフィールド研究。",steps:["公園や並木道でぬけがらを探して集める","見つけた場所を地図にシールで記録する","図鑑やネットで種類を見分ける（大きさ・触角）","種類ごとの数と場所のかたよりを調べる"],mat:["採集袋","地図のコピー","シール","図鑑"],matome:"手作りマップ＋ぬけがら実物（箱に貼る）の展示型まとめは自由研究展で目立つ！"},
+{t:"植物の成長観察日記",c:"nat",g:[1,4],d:7,desc:"朝顔やミニトマトなど、育てている植物を毎日同じ時間に観察して記録する王道テーマ。",steps:["観察する植物と場所を決める","毎日同じ時間に、高さ・葉の数・花のようすを記録","週に1回スケッチか写真をとる","天気と成長の関係も合わせてメモする"],mat:["育てている植物","定規","観察ノート","カメラ"],matome:"高さの折れ線グラフ＋写真を日付順に並べるだけで立派な研究に。毎日3分でOK"},
+{t:"月の満ち欠け観察",c:"nat",g:[4,9],d:7,desc:"毎晩同じ時間に月の形と位置を記録して、満ち欠けのしくみを考える天体観察の定番。",steps:["観察する時間と場所を決める（毎日同じに）","月の形・方角・高さをスケッチで記録する","くもりの日は「観察できず」と正直に記録","満ち欠けのしくみを図で説明する"],mat:["観察ノート","方位磁石","（あれば）双眼鏡"],matome:"ボールと電灯で満ち欠けを再現した写真を入れると、しくみの説明がぐっと分かりやすい"},
+{t:"雲と天気の関係しらべ",c:"nat",g:[3,6],d:7,desc:"毎日空の雲を写真にとって種類を見分け、翌日の天気との関係を探る気象観察。",steps:["毎日同じ時間・場所で空の写真をとる","雲の種類（すじ雲・わた雲・入道雲など）を図鑑で見分ける","その日と翌日の天気を記録する","「この雲が出ると翌日は…」の法則を探す"],mat:["カメラ","雲の図鑑またはネット資料","記録表"],matome:"写真＋雲の名前＋天気の3点セットを表にすると、法則が見つけやすい"},
+{t:"身近な鳥の観察図鑑づくり",c:"nat",g:[3,9],d:3,desc:"近所で見かける鳥を観察して、自分だけのオリジナル野鳥図鑑を作る。",steps:["朝の公園などで鳥を探して観察する","大きさ・色・鳴き声・いた場所をメモする","図鑑で名前を調べる","1種類1ページの「マイ図鑑」にまとめる"],mat:["メモ帳","（あれば）双眼鏡","図鑑"],matome:"イラストが得意なら絵で、苦手なら特徴の文字情報で勝負。鳴き声のカタカナ表記が面白い"},
+{t:"ダンゴムシの迷路実験",c:"nat",g:[1,4],d:1,desc:"ダンゴムシには「交互に曲がる」習性がある？段ボールで迷路を作って確かめる、1日でできる実験。",steps:["段ボールでT字路がいくつかある迷路を作る","ダンゴムシを入り口に置いて、曲がる方向を記録","5〜10匹で同じ実験をくり返す","右・左どちらに曲がったか集計する"],mat:["ダンゴムシ数匹","段ボール・工作用紙","記録用紙"],matome:"「交替性転向反応」という言葉を調べて添えると中身がぐっと深くなる。実験後は逃がそう"},
+{t:"夏の星座観察",c:"nat",g:[4,9],d:3,desc:"夏の大三角を中心に、星座を数日にわたって観察・スケッチする天体観察。",steps:["星座早見表で今夜見える星座を確認","暗い場所で夏の大三角を探す","位置と時間をスケッチで記録","時間や日をかえて位置の変化を調べる"],mat:["星座早見表（アプリでも可）","スケッチ用具","レジャーシート"],matome:"「同じ時間でも日がたつと位置が動く」ことに気づけたら大成功。夜の外出は必ず大人と"},
+{t:"牛乳パックのからくり貯金箱",c:"cra",g:[1,4],d:1,desc:"コインを入れると仕掛けが動く貯金箱を牛乳パックで工作。作品＋工夫レポートで自由研究に。",steps:["作りたい仕掛け（シーソー・すべり台など）を絵にかく","牛乳パックを切って土台と仕掛けを作る","コインを転がしてテストし、うまく動くよう調整","飾りつけをして完成"],mat:["牛乳パック","はさみ・テープ・のり","飾り用の紙やペン"],matome:"「うまくいかなかった→こう直した」の試行錯誤メモを添えると工作が研究に変わる"},
+{t:"ペットボトル空気砲",c:"cra",g:[1,4],d:1,desc:"ペットボトルと風船で空気砲を作り、どこまで空気の弾が届くか実験する工作＋実験テーマ。",steps:["ペットボトルの底を切る（大人と一緒に）","風船を切って底にかぶせ、テープでとめる","風船を引いてはなし、紙コップの的で威力テスト","ボトルの大きさをかえて飛び方を比べる"],mat:["ペットボトル数本","風船","ビニールテープ","的にする紙コップ"],matome:"大きさ別の「飛距離ランキング表」を作ると実験らしくなる。※カッターは大人と"},
+{t:"輪ゴム動力車をつくって走らせよう",c:"cra",g:[3,6],d:1,desc:"輪ゴムのねじる力で走る車を作り、巻く回数と走る距離の関係を調べる。",steps:["ペットボトルキャップと竹ぐしでタイヤと車軸を作る","輪ゴムを車軸にかけて動力にする","巻く回数を10回・20回・30回とかえて走らせる","距離をメジャーではかって記録する"],mat:["段ボール・ペットボトルキャップ","竹ぐし・輪ゴム","メジャー"],matome:"巻き数と距離のグラフは実験の王道。「たくさん巻くとどうなる？」の予想→結果の流れで"},
+{t:"スライムのかたさ研究",c:"cra",g:[1,6],d:1,desc:"洗濯のりとホウ砂水でスライムを作り、分量をかえてかたさがどう変わるか比べる人気テーマ。",steps:["基本の分量でスライムを作る","ホウ砂水の量を半分・2倍にかえて作り比べる","のび方・ちぎれ方・さわり心地を記録","一番好きなかたさのレシピを完成させる"],mat:["洗濯のり（PVA）","ホウ砂","カップ・割りばし","食紅（色つけ用）"],matome:"のびた長さを測って数字で比べると◎。※ホウ砂は口に入れない・遊んだら手を洗う"},
+{t:"ビー玉ころがしコースター",c:"cra",g:[3,6],d:3,desc:"段ボールや紙で立体コースを作り、ビー玉が最後まで転がりきる工夫を重ねる大型工作。",steps:["コースの設計図をかく","土台に坂・トンネル・ジャンプ台を取り付ける","ビー玉を転がしては失敗ポイントを直す","完成したら動画や連続写真で記録"],mat:["段ボール・トイレットペーパーの芯","ビー玉","テープ・カッター（大人と）"],matome:"「失敗→改良」の記録が最大の見せ場。改良前後の写真を並べて説明しよう"},
+{t:"かんたんモーターづくり",c:"cra",g:[5,9],d:1,desc:"エナメル線と磁石と電池だけで回るクリップモーターを作り、電気と磁石の関係を学ぶ。",steps:["エナメル線を巻いてコイルを作る","コイルの端を紙やすりでけずる（片側は半分だけ）","クリップの台に乗せ、磁石を近づけて電池をつなぐ","回ったら、磁石の位置や数をかえて回り方を比べる"],mat:["エナメル線","フェライト磁石","単3電池・クリップ","紙やすり"],matome:"回るしくみ（電流と磁界）を図で説明できたら中学レベルの内容に。電池の熱に注意"},
+{t:"よく飛ぶ紙飛行機の研究",c:"cra",g:[3,9],d:1,desc:"折り方・紙の種類・重心をかえて、どの紙飛行機が一番飛ぶかをデータで比べる。",steps:["折り方のちがう紙飛行機を3〜5種類作る","同じ場所・同じ投げ方で各5回ずつ飛ばす","飛距離をメジャーで測って平均を出す","先にクリップをつけるなど改造して再テスト"],mat:["コピー用紙・折り紙など","メジャー","クリップ","記録表"],matome:"「平均を出す」「条件をそろえる」ができていると、ぐっと科学的な研究に見える"},
+{t:"ソーラークッカーをつくろう",c:"cra",g:[5,9],d:3,desc:"アルミホイルと段ボールで太陽光調理器を作り、水の温度がどこまで上がるか実験するエコ工作。",steps:["段ボール箱の内側にアルミホイルをはる","黒くぬった容器に水を入れて中央に置く","晴れた日に太陽へ向けて設置し、30分ごとに水温を記録","形や向きをかえて温まり方を比べる"],mat:["段ボール箱","アルミホイル","黒い容器・温度計","ラップ"],matome:"時間と水温の折れ線グラフが主役。暑い日の観察はこまめに日かげで休みながら"},
+{t:"ホットケーキふくらみ実験",c:"coo",g:[3,6],d:1,desc:"ベーキングパウダーの量をかえてホットケーキを焼き、ふくらみ方のちがいを調べるおいしい実験。",steps:["ベーキングパウダーなし・半分・ふつう・2倍の4種類の生地を作る","同じ火加減・同じ量で焼く","ふくらんだ高さを竹ぐしとものさしで測る","切った断面のあなの大きさも比べる"],mat:["ホットケーキの材料","ベーキングパウダー","フライパン（加熱は大人と）","ものさし"],matome:"断面の写真を4枚並べると一目瞭然。「なぜふくらむのか」を調べて書けば完璧"},
+{t:"ふって作る手作りバター",c:"coo",g:[1,4],d:1,desc:"生クリームをペットボトルに入れてひたすらふるとバターに！変化の様子を記録する体験型実験。",steps:["生クリーム（動物性）をペットボトルに入れる","音や手ごたえの変化をメモしながらふり続ける","固まりができたら取り出して水気を切る","パンにぬって試食した感想を記録"],mat:["動物性生クリーム","ペットボトル","塩（お好みで）"],matome:"「何分ふったらどうなった」の時間記録がポイント。ふる係を交代した場合はそれも記録"},
+{t:"ジュースでグミ・ゼリー固まり方実験",c:"coo",g:[3,6],d:1,desc:"ゼラチンで色々なジュースを固めると、なぜか固まらないものがある！その理由を探る実験。",steps:["同じ量のゼラチンで数種類のジュースを固めてみる","冷蔵庫で冷やして、固まり具合を比べる","固まらなかったジュースの共通点を探す","加熱したパイナップルジュースでも試す"],mat:["ゼラチン","ジュース数種類（生パイナップル系を必ず入れる）","カップ"],matome:"「たんぱく質分解酵素」がキーワード。固まらない理由まで調べると高学年らしい研究に"},
+{t:"お米のたき方くらべ",c:"coo",g:[3,9],d:1,desc:"水の量・浸す時間をかえてご飯を炊き、味・かたさ・見た目を食べ比べる生活密着型の研究。",steps:["水加減や浸水時間の条件を3パターン決める","同じお米・同じ量で炊き比べる","見た目・かたさ・あまさを5段階で評価","家族にも食べてもらって評価を集める"],mat:["お米","計量カップ","炊飯器または鍋","評価シート"],matome:"家族の評価を集めると「試食アンケート」になってデータに厚みが出る"},
+{t:"パン生地の発酵観察",c:"coo",g:[5,9],d:1,desc:"イースト・砂糖・温度の条件をかえて、発酵のふくらみ方を比べる微生物実験。",steps:["ぬるま湯＋砂糖＋イーストの基本液をペットボトルに作る","砂糖なし・冷水・お湯など条件ちがいを用意","口に風船をかぶせて、ふくらみを30分ごとに記録","風船の大きさを条件ごとに比べる"],mat:["ドライイースト","砂糖","ペットボトル・風船","温度計"],matome:"風船の大きさ比べの写真がわかりやすい。イーストは生き物、という視点で考察を"},
+{t:"氷と塩でアイスクリームづくり",c:"coo",g:[2,6],d:1,desc:"氷に塩を入れると0℃より冷たくなる現象を使って、冷凍庫なしでアイスを作る実験。",steps:["ジッパー袋に牛乳・砂糖・バニラエッセンスを入れる","大きい袋に氷と塩をたっぷり入れ、小さい袋を中に入れる","タオルで包んで10分ふり続ける","氷＋塩の温度を測って、なぜ凍るのか考える"],mat:["牛乳・砂糖","ジッパー袋（大小）","氷・塩たっぷり","温度計・タオル"],matome:"「氷だけ」と「氷＋塩」の温度比較データを載せると、おいしいだけじゃない実験になる"},
+{t:"だしのうま味くらべ",c:"coo",g:[4,9],d:1,desc:"こんぶ・かつお・にぼし・合わせだしを飲み比べて、うま味のちがいと相乗効果を調べる和食研究。",steps:["4種類のだしをとる（加熱は大人と）","色・香り・味をそれぞれ5段階で評価する","こんぶ＋かつおの合わせだしと単独だしを比べる","家族にも目かくしテストをしてもらう"],mat:["こんぶ・かつおぶし・にぼし","鍋","評価シート"],matome:"「うま味の相乗効果」がキーワード。和食文化について1ページ調べると社会科ともつながる"},
+{t:"スーパー・冷蔵庫の産地しらべ",c:"res",g:[1,4],d:1,desc:"おうちの冷蔵庫やスーパーの食べ物が、どこから来たのかを調べて日本地図・世界地図に貼っていく調べ学習。",steps:["冷蔵庫や買い物した食品のラベルで産地を調べる","食べ物の名前と産地をメモする","地図に食べ物の絵やシールを貼る","遠くから来たものランキングを作る"],mat:["食品のラベルやパッケージ","白地図（日本・世界）","シール・色えんぴつ"],matome:"「一番遠くから来た食べ物」「わが県の食べ物」など発見をふきだしで書き込むと楽しいまとめに"},
+{t:"まちのマーク・ひょうしきしらべ",c:"res",g:[1,4],d:3,desc:"散歩しながら町にある標識やマークを集めて、意味を調べるまち探検型の調べ学習。",steps:["おうちの人と散歩しながらマークや標識の写真をとる","見つけた場所をメモする","本やネットで意味を調べる","マークずかんにまとめる"],mat:["カメラ","メモ帳","調べる用の本・ネット"],matome:"「みんなを守るマーク」「ごみやリサイクルのマーク」など仲間分けすると図鑑らしくなる。道路では安全第一で"},
+{t:"都道府県の名産マップ",c:"res",g:[3,6],d:3,desc:"47都道府県の名産品や特産物を調べて、日本地図に絵と一緒にまとめる調べ学習の定番。",steps:["白地図を用意する","図書館の本やネットで各県の名産を調べる","名産の絵やシールを地図にはっていく","気づいたこと（海の県は魚が多い等）をまとめる"],mat:["白地図（大きめ）","色えんぴつ・ペン","図鑑・資料"],matome:"全部埋めるのが大変なら「食べ物だけ」「行ったことある県だけ」に絞るのもアリ"},
+{t:"わが町の歴史タイムトラベル",c:"res",g:[4,9],d:7,desc:"昔の地図や写真と今の様子を比べて、自分の町の変化を調べるフィールドワーク型研究。",steps:["図書館や市役所で昔の地図・写真を探す","同じ場所の今の写真をとりに行く","昔と今の写真を並べて変化を記録","おじいちゃん・おばあちゃんや近所の人に昔の話を聞く"],mat:["昔の地図・写真（図書館で）","カメラ","インタビューメモ"],matome:"「昔⇔今」の写真比較＋インタビューの生の声、この2つがそろうと最強の調べ学習"},
+{t:"ごみとリサイクルのゆくえ調査",c:"res",g:[3,6],d:3,desc:"家のごみを数日分類して量を記録し、リサイクルのしくみを調べる環境学習テーマ。",steps:["ごみの種類分け表を作る","数日間、家のごみの種類と量を記録する","市のごみ処理・リサイクルの流れを調べる","ごみを減らすアイデアを考えて実践してみる"],mat:["記録表","市のごみ分別パンフレット","はかり（あれば）"],matome:"「わが家のごみグラフ」＋「減らすチャレンジの結果」で行動まで見せると評価が高い"},
+{t:"世界の朝ごはん調べ",c:"res",g:[3,6],d:3,desc:"世界の国々の朝ごはんを調べて比べる、食から入る国際理解の調べ学習。",steps:["調べたい国を5〜10カ国選ぶ","本やネットで朝ごはんの内容を調べる","日本の朝ごはんと比べて共通点・ちがいを探す","1つ選んで実際に作って食べてみる"],mat:["資料（図書館・ネット）","白地図","（作る場合）材料"],matome:"「実際に作って食べた」体験レポートが入ると、ただの調べ学習から一歩抜け出せる"},
+{t:"わが家の防災マップ＆持ち出し袋しらべ",c:"res",g:[4,9],d:3,desc:"家や通学路の危険箇所・避難場所を調べてマップにし、非常用持ち出し袋の中身を点検する実用研究。",steps:["市のハザードマップを入手する","家から避難場所までの道を実際に歩いてチェック","わが家の防災グッズを全部出して点検・記録","足りないものリストと家族会議の結果をまとめる"],mat:["ハザードマップ","カメラ・メモ","家の防災グッズ"],matome:"「点検前→点検後」の持ち出し袋の変化を見せると、家族の役に立つ研究として説得力抜群"},
+{t:"物の値段の移り変わり調査",c:"res",g:[5,9],d:3,desc:"アイス・ガソリン・はがき代など身近な物の値段が昔からどう変わったかを調べ、理由を考える社会科研究。",steps:["調べる品物を3〜5つ選ぶ","統計サイトや本で10年ごとの値段を調べる","折れ線グラフにして変化を見る","値段が動いた理由を調べる"],mat:["資料（図書館・統計サイト）","グラフ用紙"],matome:"グラフの急な変化ポイントに「何があった年か」の注釈を入れると歴史とつながる"},
+{t:"家族の歴史インタビュー＆家系図づくり",c:"res",g:[2,9],d:3,desc:"祖父母や親にインタビューして家族の歴史をまとめ、家系図を作る。夏休みの帰省とも相性抜群。",steps:["聞きたいことリストを作る（子どもの頃の遊び・学校・仕事など）","祖父母・親にインタビューして録音かメモ","わかった範囲で家系図をかく","昔と今のくらしのちがいを比べてまとめる"],mat:["インタビューメモ","（あれば）古い写真","大きめの紙"],matome:"古い写真を借りて年表に貼ると一気に本格的に。聞いた話は「〜だそうです」と正確に書こう"},
+{t:"スポーツのルールと歴史しらべ",c:"res",g:[4,9],d:3,desc:"好きなスポーツの起源・ルールの変化・道具の進化を調べる、スポーツ好きにぴったりの研究。",steps:["調べるスポーツを1つ決める","起源と歴史を本やネットで調べる","昔と今のルール・道具のちがいを表にする","「なぜルールが変わったのか」を考察する"],mat:["資料（図書館・公式サイト）","まとめ用紙"],matome:"年表＋道具の進化イラストの組み合わせが見やすい。実際にプレーした感想も添えて"},
+{t:"Scratchでオリジナルゲームづくり",c:"it",g:[3,9],d:3,desc:"無料のScratchでシューティングや迷路ゲームを作り、工夫した点を制作レポートにまとめる。",steps:["Scratchで作りたいゲームを決めて設計図をかく","キャラクターの動きをプログラムする","得点や敵などのルールを追加する","家族にテストプレーしてもらい改良する"],mat:["パソコンまたはタブレット","Scratch（無料）"],matome:"「設計図→完成画面→工夫した点→改良の記録」の流れ。プログラムの一部を印刷して貼ろう"},
+{t:"Scratchでクイズアプリづくり",c:"it",g:[3,6],d:1,desc:"1日で完成できるクイズアプリをScratchで作る、プログラミング入門にぴったりのテーマ。",steps:["クイズの問題を5〜10問考える","「もし〜なら」ブロックで正解判定を作る","正解数を数えるスコア機能をつける","家族に遊んでもらって感想を記録"],mat:["パソコンまたはタブレット","Scratch（無料）"],matome:"問題を自由研究のほかのテーマ（都道府県など）にすると一石二鳥"},
+{t:"タイピング上達の記録研究",c:"it",g:[3,9],d:7,desc:"無料タイピングサイトで毎日練習し、スコアの変化をグラフにする「自分が実験台」の研究。",steps:["無料のタイピング練習サイトを選ぶ","毎日同じ時間に同じテストを受けて記録","1週間〜のスコアを折れ線グラフにする","伸びた時期・伸びなかった時期の理由を考える"],mat:["パソコン","無料タイピングサイト","記録表"],matome:"練習時間や体調もメモしておくと考察の材料になる。継続の証拠として毎日の記録が命"},
+{t:"Viscuitでうごく絵本づくり",c:"it",g:[1,4],d:1,desc:"お絵かき感覚のプログラミング言語Viscuitで、自分の絵が動くアニメーション作品を作る低学年向けテーマ。",steps:["Viscuit（無料）を開いて絵をかく","「メガネ」のしくみで絵に動きをつける","お話のあるアニメーションに仕上げる","作り方と工夫を絵日記ふうにまとめる"],mat:["タブレットまたはパソコン","Viscuit（無料）"],matome:"完成画面のスクリーンショットを印刷して紙芝居ふうにまとめると提出しやすい"},
+{t:"おうちの中のセンサー大調査",c:"it",g:[2,6],d:1,desc:"自動ドア・トイレの電気・エアコン…家や町の中の「センサー」を探して、しくみを調べるIT調査研究。",steps:["家の中で「自動で動くもの」を探してリストにする","町でも探す（自動ドア・街灯など）","それぞれ何を感知しているのか調べる","「未来にあったらいいセンサー」を考える"],mat:["メモ帳","カメラ","調べる用の本・ネット"],matome:"「人感」「温度」「明るさ」などセンサーの種類で分類した表を作るとIT研究らしくなる"},
+{t:"表計算でわが家のデータ分析",c:"it",g:[5,9],d:3,desc:"Excelやスプレッドシートに毎日の気温・電気使用量などを記録して、グラフ化・分析まで行うデータ入門。",steps:["記録するデータを決める（気温・電気・歩数など）","毎日スプレッドシートに入力する","合計・平均を関数で計算する","グラフを作って気づいたことをまとめる"],mat:["パソコン","ExcelまたはGoogleスプレッドシート（無料）"],matome:"「関数を使って自動計算した」ことがアピールポイント。使った関数名も書いておこう"},
+{t:"AIとおしゃべり・お絵かき比較研究",c:"it",g:[4,9],d:1,desc:"AIに同じ質問やお題を出して、答えや絵がどう変わるか比べる、いまどきのAIリテラシー研究。",steps:["おうちの人と一緒にAIツールを使う準備をする","同じお題を言い方をかえて何回か出してみる","出てきた答えや絵のちがいを記録する","AIが得意なこと・苦手なことを考察する"],mat:["パソコンまたはタブレット","AIツール（保護者のアカウントで）"],matome:"「言い方をかえると結果が変わる」発見が面白いポイント。AIの答えを信じすぎない視点も書こう"},
+{t:"micro:bitで温度はかりロボ",c:"it",g:[5,9],d:3,desc:"小型コンピューターmicro:bitで温度を測って記録するプログラムを作る、電子工作×プログラミング研究。",steps:["micro:bitをパソコンにつなぐ","MakeCodeで温度を表示するプログラムを作る","家の各部屋の温度を測ってまわる","部屋ごとの温度の差とその理由を考察する"],mat:["micro:bit本体（数千円程度）","パソコン","記録表"],matome:"プログラムのブロック画面と温度マップ（家の間取り図＋温度）の組み合わせが強い"},
+{t:"うく？しずむ？水にうくものしらべ",c:"sci",g:[1,4],d:1,desc:"野菜・果物・おもちゃなどを水に入れて、うくかしずむかを予想してからたしかめる、ワクワクの定番実験。",steps:["調べたいものを10個くらい集める","うくかしずむか、先に予想を書く","水そうやバケツに入れてたしかめる","予想と結果を表にして、あたった数を数える"],mat:["大きめの水そうかバケツ","野菜・果物・おもちゃなど","予想と結果を書く表"],matome:"「予想→結果」の◯×表が主役。「重いのにうくものがあった！」など意外な発見を大きく書こう"},
+{t:"われにくいシャボン玉の研究",c:"sci",g:[1,6],d:1,desc:"シャボン液に砂糖や洗濯のりを混ぜて、いちばん割れにくいシャボン玉のレシピを探す実験。",steps:["基本のシャボン液（水＋台所用洗剤）を作る","砂糖入り・洗濯のり入りなど数種類の液を作る","同じ吹き方で、割れるまでの時間や大きさを比べる","最強レシピを発表する"],mat:["台所用洗剤","砂糖・洗濯のり","ストロー・カップ","ストップウォッチ"],matome:"レシピごとの「割れるまでの秒数」を棒グラフに。液が目に入らないよう注意して外で実験しよう"},
+{t:"たまごが塩水にうく？濃さと浮力の実験",c:"sci",g:[3,6],d:1,desc:"真水にしずむ卵が、塩を入れるとうき上がる！塩の量をかえて、うき方がどう変わるか調べる実験。",steps:["コップの真水に卵を入れてしずむのを確認","塩を大さじ1ずつ足してかき混ぜ、卵のようすを観察","うき始めた塩の量を記録する","砂糖でも同じことをして比べる"],mat:["卵","塩・砂糖","透明な大きめコップ","計量スプーン"],matome:"塩の量と卵の位置を段階的なイラストで描くとわかりやすい。「死海」について調べて添えると◎"},
+{t:"砂糖のカラメル化実験",c:"sci",g:[5,9],d:1,desc:"砂糖を加熱すると色と香りが変わっていく「カラメル化」を、時間を記録しながら観察する実験。",steps:["鍋に砂糖と少量の水を入れて弱火にかける（必ず大人と）","色の変化を時間ごとに写真で記録","うすい→こいの色見本を作る","カラメル化とは何かを調べてまとめる"],mat:["砂糖","鍋（加熱は大人と）","カメラ","（あれば）温度計"],matome:"時間ごとの色の写真を並べた「カラメル色見本」が映える。※高温になるためやけどに厳重注意"},
+{t:"かげの動きしらべ",c:"nat",g:[1,4],d:1,desc:"朝から夕方まで、同じ場所でかげの向きと長さを記録して、太陽の動きを調べる観察研究。",steps:["ベランダや庭に棒やペットボトルを立てる","1〜2時間ごとに、かげの先の位置にしるしをつける","かげの長さも測って記録する","かげの動きと太陽の位置の関係を考える"],mat:["棒またはペットボトル","チョークやテープ","メジャー","時計"],matome:"しるしを線で結ぶと「かげの通り道」が見える。太陽の動きと逆向きなことに気づけたら大成功"},
+{t:"打ち水はどれくらい涼しくなる？実験",c:"nat",g:[4,9],d:1,desc:"昔ながらの「打ち水」で地面の温度が本当に下がるのか、温度計で測って確かめる夏らしい実験。",steps:["ベランダや庭の日なたの地面の温度を測る","水をまいて、5分ごとに温度の変化を記録","日かげ・まく時間帯（朝/昼/夕）でも比べる","結果から打ち水に効果的な条件を考える"],mat:["温度計","バケツと水","記録表","時計"],matome:"時間と温度の折れ線グラフが主役。熱中症に注意して、測定は短時間で済ませよう"},
+{t:"野菜の再生栽培（リボベジ）観察",c:"nat",g:[2,9],d:7,desc:"ねぎやにんじんのヘタを水につけて育て、成長のようすを記録する、キッチンでできる栽培実験。",steps:["ねぎの根元・にんじんのヘタなどを水につける","毎日水をかえて、のびた長さを記録する","日なたと日かげで育ち方を比べる","のびた長さをグラフにする"],mat:["野菜の切れはし（ねぎ・にんじん等）","浅い容器","定規","記録ノート"],matome:"毎日の長さの折れ線グラフ＋写真のセットで。「どの野菜が一番よく育つか」の比較も面白い"},
+{t:"紙の橋の強さ実験",c:"cra",g:[5,9],d:1,desc:"同じ紙でも、折り方をかえるだけで強さが激変！何枚のコインに耐えられるか比べる構造の実験。",steps:["コピー用紙で平らな橋・折った橋・丸めた橋を作る","同じ間かくの台の上にわたす","コインを1枚ずつのせて、くずれるまでの枚数を記録","一番強い形の理由を調べる"],mat:["コピー用紙","コイン（同じ種類をたくさん）","台になる本や箱"],matome:"形ごとの「耐えた枚数」ランキングに、実際の橋や建物の構造の話を添えると本格派"},
+{t:"ピンホールカメラづくり",c:"cra",g:[5,9],d:3,desc:"レンズなしで景色が写る「ピンホールカメラ」を箱で作り、像が上下逆に見えるしくみを調べる光の工作。",steps:["箱の片面に小さな穴、反対側にトレーシングペーパーをはる","明るい景色に向けて、うつる像を観察する","穴の大きさをかえて、像の明るさ・ぼやけ方を比べる","光がまっすぐ進む性質と結びつけて説明する"],mat:["空き箱","トレーシングペーパー","アルミホイル・画びょう","黒いテープ"],matome:"「なぜ上下逆さまにうつるのか」を光の線の図で説明できたら完璧。※太陽を直接見ないこと"},
+{t:"どのジュースが早くこおる？実験",c:"coo",g:[1,4],d:1,desc:"水・ジュース・スポーツドリンクを同時に冷凍庫へ。こおる早さと、こおり方のちがいを調べる実験。",steps:["同じ量の水とジュース数種類を同じ形の容器に入れる","冷凍庫に並べて入れ、30分ごとにようすを観察","こおった順番を記録する","とけるときの早さも比べてみる"],mat:["水・ジュース数種類","同じ形の容器","冷凍庫","時計"],matome:"30分ごとの観察記録表がそのままレポートになる。「あまいものほどこおりにくい？」の予想を立てよう"},
+{t:"ドレッシングの乳化実験",c:"coo",g:[5,9],d:1,desc:"混ざらないはずの油と酢が、あるものを足すと混ざったまま！「乳化」のしくみをドレッシングで学ぶ実験。",steps:["油と酢をびんに入れてふり、分離するまでの時間を測る","マヨネーズ・からし・卵黄などを少し足して同じ実験","分離しにくさを比べて記録する","乳化のしくみを調べてまとめる"],mat:["サラダ油・酢","マヨネーズ・からし・卵黄","透明なびん","ストップウォッチ"],matome:"「ふった直後→5分後→30分後」の写真比較が効果的。マヨネーズが乳化食品であることにも触れよう"},
+{t:"昔の遊びしらべ＆体験",c:"res",g:[2,6],d:3,desc:"おじいちゃん・おばあちゃん世代の遊びを聞いて調べ、実際に体験して今の遊びと比べる調べ学習。",steps:["家族や親せきに子どものころの遊びをインタビュー","遊び方のルールをくわしく聞いて記録","実際にやってみて感想をメモ","今の遊びとのちがいを表にまとめる"],mat:["インタビューメモ","遊びの道具（お手玉など）","カメラ"],matome:"「聞く→やってみる→比べる」の3段構成で。体験中の写真と本音の感想が一番の見どころ"},
+{t:"お店の工夫大調査（スーパー探検）",c:"res",g:[3,9],d:3,desc:"スーパーやコンビニの売り場には工夫がいっぱい。品物の並べ方や値札の秘密を探るお店探検研究。",steps:["お店の人に許可をもらって売り場を観察","入口付近・目の高さ・レジ横に何があるか記録","なぜその場所なのか、理由を予想する","可能ならお店の人にインタビューして答え合わせ"],mat:["メモ帳","（許可があれば）カメラ","調べる用の本・ネット"],matome:"「予想→お店の人の答え」の答え合わせ形式が面白い。売り場の見取り図を描くと分かりやすさ抜群"},
+{t:"QRコードのしくみ調べ＆自作",c:"it",g:[5,9],d:1,desc:"毎日見かけるQRコードはどんなしくみ？調べたうえで、無料サービスで自分のQRコードを作るIT研究。",steps:["QRコードの歴史としくみを調べる","3つの角の四角（切り出しシンボル）の役割を整理","無料の作成サイトで自分のQRコードを作る","一部をかくしても読めるか実験する"],mat:["パソコンまたはタブレット","無料のQRコード作成サイト","印刷用紙"],matome:"「少し汚れても読める理由（誤り訂正）」まで説明できたら中学レベル。読み取り実験の結果も載せよう"},
+{t:"家族のスマホ・ゲーム時間調査",c:"it",g:[4,9],d:3,desc:"家族みんなのスマホ・ゲーム・テレビの時間を数日間調査して、グラフにまとめるデータ研究。",steps:["調査する項目と記録表を決める","家族に協力してもらい、数日分の時間を記録","人別・曜日別のグラフを作る","気づいたことと「わが家のルール案」を考える"],mat:["記録表","家族の協力","グラフ用紙またはパソコン"],matome:"データから「ルール提案」までつなげると、ただの調査が家族に役立つ研究に変わる"},
+{t:"果物で電池をつくる（ボルタ電池）",c:"sci",g:[7,9],d:1,desc:"レモンと銅板・亜鉛板で電池を自作し、果物や液体ごとの電圧のちがいを調べる化学実験。イオン化傾向まで踏み込める。",steps:["銅板と亜鉛板をレモンにさして電子オルゴールをつなぐ","果物や液体（塩水・酢）をかえて鳴り方を比べる","（あれば）テスターで電圧を測って記録する","イオン化傾向と電池のしくみを調べてまとめる"],mat:["レモンなどの果物","銅板・亜鉛板（ホームセンター等）","電子オルゴールまたはテスター","導線・クリップ"],matome:"果物別の電圧ランキング表＋しくみの図解で。実験に使った果物は絶対に食べないこと"},
+{t:"ペーパークロマトグラフィーで色を分解",c:"sci",g:[5,9],d:1,desc:"水性ペンの黒インクをろ紙と水で分離すると、意外な色がかくれている！色素の分離を調べる化学実験。",steps:["コーヒーフィルターを短冊に切り、水性ペンで点を打つ","下端を水にひたし、水がのぼるのを待つ","色の分かれ方をメーカー・色別に比べる","なぜ色が分かれるのかを調べてまとめる"],mat:["水性ペン数種類","コーヒーフィルターかろ紙","コップと水","わりばし"],matome:"分離後の実物（乾かしたもの）をそのまま貼れるのが強み。メーカーごとのちがいは考察のネタに"},
+{t:"振り子の周期の法則を確かめる",c:"sci",g:[7,9],d:1,desc:"ひもの長さ・おもりの重さ・ふれはばをかえて、振り子の1往復の時間が何で決まるかをデータで検証する物理実験。",steps:["ひもとおもりで振り子を作る","10往復の時間を測って1往復の平均を出す","長さ・重さ・ふれはばを1つずつかえて測定する","結果を表とグラフにして法則を導く"],mat:["ひも","ナットなどのおもり","ストップウォッチ","メジャー"],matome:"「変える条件は1つだけ」を守った実験計画そのものが評価ポイント。ガリレオの逸話を添えても"},
+{t:"ヒートアイランド現象を測ってみる",c:"nat",g:[7,9],d:3,desc:"アスファルト・芝生・日かげなど場所ごとの温度を同時刻に測り、都市が暑くなる理由を検証する環境研究。",steps:["測定する地点を5カ所ほど決める（舗装・緑地・水辺など）","同じ時刻に気温と地面近くの温度を測ってまわる","朝・昼・夕で同じ測定をくり返す","地点ごとの温度差から原因を考察する"],mat:["温度計","記録表","地図","帽子と飲み物（暑さ対策）"],matome:"地図に温度を書きこんだ「わが町の温度マップ」が主役。測定は短時間で、熱中症対策は万全に"},
+{t:"気象データで自分の町の気候を分析",c:"nat",g:[7,9],d:3,desc:"気象庁の公開データを使って、地元の気温や猛暑日数の長期変化をグラフ化・分析するデータ分析型研究。",steps:["気象庁サイトから地元の過去の気象データを入手する","30年前と最近の夏の気温を表計算ソフトでグラフ化","猛暑日・熱帯夜の日数の変化を数える","変化の理由を調べて考察する"],mat:["パソコン","気象庁の過去データ（無料）","表計算ソフト"],matome:"実測でなく公的データを使う「分析型」は中学生らしい研究になる。データの出典の明記を忘れずに"},
+{t:"やさいのたね・中身のかんさつ",c:"nat",g:[1,4],d:1,desc:"ピーマン・トマト・きゅうりなどを切って、たねの数や形、ならび方を調べる、おどろきいっぱいの観察研究。",steps:["いろいろな野菜や果物を用意する","半分に切って中のようすをスケッチする（刃物は大人と）","たねの数をかぞえて記録する","たねの数や形を野菜どうしで比べる"],mat:["野菜・果物いろいろ","包丁（大人と使う）","虫めがね","スケッチ用具"],matome:"断面のスケッチとたねの数ランキングで構成。「たねはどこにできる？」の気づきを書けたら◎"},
+{t:"エッグドロップ・卵を守る装置づくり",c:"cra",g:[7,9],d:1,desc:"高い場所から落としても卵が割れない保護装置を、紙とテープだけで設計する工学チャレンジ。",steps:["紙・ストロー・テープで卵の保護装置を設計する","低い高さから落としてテストする","壊れた点を分析して改良する","高さを上げて限界に挑戦し、記録をまとめる"],mat:["卵（数個）","紙・ストロー・テープ","メジャー","そうじ道具（失敗に備えて）"],matome:"「設計図→落下テスト→改良」を回した回数が見せ場。衝撃を吸収するしくみを考察しよう"},
+{t:"ストロータワー強度チャレンジ",c:"cra",g:[5,9],d:1,desc:"ストローとテープだけで、高くて倒れないタワーを作る。三角形の強さを体感する構造実験。",steps:["ストロー30本とテープで自由にタワーを作る","高さと、上に乗せられる重さを測る","三角形を使った構造に作り直して比べる","橋や鉄塔の構造と比べて考察する"],mat:["ストロー（多めに）","セロハンテープ","はかりとおもり","メジャー"],matome:"「四角のタワーvs三角のタワー」の比較写真が説得力大。トラス構造という言葉を調べてみよう"},
+{t:"ビー玉まんげきょうづくり",c:"cra",g:[1,6],d:1,desc:"ミラーシートとビー玉で、のぞくたびに景色が変わる万華鏡を作る、光のふしぎ工作。",steps:["ミラーシートを三角柱に組んで筒に入れる","先にビー玉を取り付ける","いろいろな景色をのぞいて見え方を記録する","鏡の枚数や角度をかえて見え方を比べる"],mat:["ミラーシート（100円ショップ）","ラップの芯など筒","ビー玉","テープ"],matome:"のぞいた景色をスマホで撮って印刷して貼ると伝わりやすい。鏡の角度と模様の関係が考察ポイント"},
+{t:"温度で変わる？温泉たまごの科学",c:"coo",g:[5,9],d:1,desc:"白身と黄身は固まる温度がちがう！お湯の温度と時間をかえて、たまごの固まり方を調べる食品科学実験。",steps:["65℃・75℃・沸とうなど温度別にたまごを加熱する（大人と）","同じ時間で取り出して割り、固まり方を比べる","時間をかえた比較もする","たんぱく質が固まる温度を調べてまとめる"],mat:["たまご","鍋と温度計","タイマー","（加熱は必ず大人と）"],matome:"割った断面の写真を温度別に並べると一目瞭然。白身と黄身の固まる温度のちがいが核心"},
+{t:"ビタミンCが多い飲み物はどれ？実験",c:"coo",g:[7,9],d:1,desc:"ヨウ素入りうがい薬の色がビタミンCで消える反応を使って、飲み物のビタミンC量を比べる化学実験。",steps:["水でうすめたうがい薬を透明カップに同量ずつ用意する","ジュースやお茶を1滴ずつ加えて、色が消えるまでの滴数を数える","滴数が少ないほどビタミンCが多いと判定する","結果をランキングにして、表示成分と見比べる"],mat:["ヨウ素入りうがい薬","飲み物数種類","透明カップ","スポイトまたはストロー"],matome:"「色が消える瞬間」の動画や連続写真が効果的。実験に使った液は飲まずに必ず捨てること"},
+{t:"人口データで地元の未来を分析",c:"res",g:[7,9],d:3,desc:"国や市の公開データから地元の人口ピラミッドを作り、30年前と比べて未来の課題を考える社会科分析研究。",steps:["市のサイトやe-Statから年齢別人口データを入手する","表計算ソフトで人口ピラミッドのグラフを作る","30年前のデータと並べて変化を読み取る","地元の将来の課題と対策のアイデアをまとめる"],mat:["パソコン","公開統計データ（無料）","表計算ソフト"],matome:"「グラフ→読み取り→自分の提案」の流れで。少子高齢化を自分の町の実データで語れるのが強い"},
+{t:"食品パッケージの表示しらべ",c:"res",g:[5,9],d:3,desc:"お菓子や飲み物のパッケージにある原材料・栄養成分表示を集めて比べ、表示のルールを調べる生活密着型研究。",steps:["家にある食品のパッケージを10個ほど集める","原材料名・栄養成分・アレルギー表示を表に写す","原材料の順番のルールなど、表示のきまりを調べる","似た商品どうしで成分を比べて気づきをまとめる"],mat:["食品のパッケージ","記録表","調べる用の本・ネット"],matome:"「原材料は多い順に書いてある」などルールの発見が面白い。同じ商品の比較表が見せ場"},
+{t:"暗号のしくみ研究＆オリジナル暗号づくり",c:"it",g:[7,9],d:1,desc:"シーザー暗号から現代のインターネット暗号まで、暗号のしくみを調べて、自作暗号を家族に解読挑戦してもらうIT研究。",steps:["シーザー暗号のしくみを調べて実際に作る","文字の出現回数から解読する「頻度分析」を試す","オリジナル暗号を設計して家族に解読してもらう","ネット通信で使われる暗号について調べてまとめる"],mat:["紙とペン","調べる用の本・ネット","協力してくれる家族"],matome:"「作った暗号が破られたら改良する」攻防の記録が面白い。HTTPSの鍵マークの話につなげると現代的"},
+{t:"HTML/CSSで自己紹介ページ制作",c:"it",g:[7,9],d:3,desc:"メモ帳とブラウザだけで、Webページが動くしくみを学びながら自分のページを作る本格プログラミング研究。",steps:["メモ帳でHTMLファイルを作りブラウザで開く","見出し・画像・リンクを追加していく","CSSで色やレイアウトを整える","制作過程と学んだタグをレポートにまとめる"],mat:["パソコン","メモ帳（標準搭載）","ブラウザ"],matome:"「コード→表示結果」のスクリーンショットをセットで並べる構成が鉄板。失敗したコードも良い材料"},
+{t:"Pythonプログラミング入門＆作品づくり",c:"it",g:[7,9],d:3,desc:"無料のオンライン実行環境で、プロも使う言語Pythonに挑戦。おみくじや計算プログラムを自作するIT研究。",steps:["ブラウザで使える無料のPython実行環境を開く","画面に文字を出す・計算するプログラムを書く","乱数を使ったおみくじプログラムを作る","つまずいた点と解決方法を記録してまとめる"],mat:["パソコン","無料のオンラインPython環境","（あれば）入門書"],matome:"完成コードだけでなく「エラー→調べて解決」の過程こそ中学生らしい研究の中身になる"}
+];
+const GRADE={e12:[1,2],e34:[3,4],e56:[5,6],jhs:[7,9]};
+const GENRE={sci:"理科実験",nat:"生き物・自然",cra:"工作・ものづくり",coo:"料理・食べ物",res:"調べ学習",it:"プログラミング・IT"};
+const DAYS={1:"1日でできる",3:"2〜3日コース",7:"1週間じっくり"};
+const GNAME={1:"小1",2:"小2",3:"小3",4:"小4",5:"小5",6:"小6",7:"中1",8:"中2",9:"中3"};
+function lvl(g){
+  if(g[0]>=7)return "中学生向け";
+  return GNAME[g[0]]+"〜"+(g[1]>=9?"中学生":GNAME[g[1]])+"向け";
 }
+let sel={grade:null,genre:null,days:null};
+let pool=[],page=0,relaxed=false;
+function bindOpts(id,key){
+  document.querySelectorAll('#'+id+' button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('#'+id+' button').forEach(function(x){x.classList.remove('sel');});
+      b.classList.add('sel');sel[key]=b.dataset.v;
+    });
+  });
+}
+bindOpts('qGrade','grade');bindOpts('qGenre','genre');bindOpts('qDays','days');
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function buildPool(){
+  const gr=GRADE[sel.grade],limit=parseInt(sel.days,10);
+  const all=DB.filter(function(x){return x.c===sel.genre&&x.g[0]<=gr[1]&&x.g[1]>=gr[0];});
+  let main=shuffle(all.filter(function(x){return x.d<=limit;}));
+  main.sort(function(a,b){return b.g[0]-a.g[0]||(b.d===limit)-(a.d===limit);});
+  relaxed=false;
+  if(main.length<3&&main.length<all.length){
+    main=main.concat(shuffle(all.filter(function(x){return x.d>limit;})).sort(function(a,b){return b.g[0]-a.g[0];}));
+    relaxed=true;
+  }
+  pool=main;page=0;
+}
+function showPage(){
+  const start=page*3,items=pool.slice(start,start+3);
+  const total=pool.length,pages=Math.ceil(total/3);
+  let note="この条件のテーマは全"+total+"件（"+pages+"ページ）｜ いま "+(page+1)+"ページ目・"+(start+1)+"〜"+(start+items.length)+"件目を表示中";
+  if(relaxed)note+=" ※日数の条件を少しゆるめた候補も含めています。";
+  document.getElementById('resultNote').textContent=note;
+  document.getElementById('themes').innerHTML=items.map(function(x){
+    return '<div class="theme"><h3>'+x.t+'</h3>'+
+    '<div class="badges"><span class="badge">'+GENRE[x.c]+'</span><span class="badge days">'+DAYS[x.d]+'</span><span class="badge lvl">'+lvl(x.g)+'</span></div>'+
+    '<p class="desc">'+x.desc+'</p>'+
+    '<h4>すすめ方</h4><ol>'+x.steps.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ol>'+
+    '<h4>用意するもの</h4><ul>'+x.mat.map(function(m){return '<li>'+m+'</li>';}).join('')+'</ul>'+
+    '<div class="matome">📝 <strong>まとめ方のコツ:</strong> '+x.matome+'</div></div>';
+  }).join('');
+  let ph="";
+  if(pages>1){
+    for(let p=0;p<pages;p++){
+      ph+='<button data-p="'+p+'"'+(p===page?' class="cur"':'')+'>'+(p+1)+'</button>';
+    }
+    if(page+1<pages)ph+='<button data-p="'+(page+1)+'" class="next">次へ ›</button>';
+  }
+  document.getElementById('pager').innerHTML=ph;
+  // 表示中テーマ・ジャンルに合わせて広告を切り替え
+  function rakuSearch(kw){
+    return "https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc="+encodeURIComponent("https://search.rakuten.co.jp/search/mall/"+encodeURIComponent(kw).replace(/%20/g,"+")+"/")+"&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9";
+  }
+  const AD_SEARCH={lead:"実験キットや工作の材料は、楽天市場でまとめてそろえられます。",btn:"楽天市場で「自由研究キット」を探す",url:rakuSearch("自由研究 キット")};
+  const AD_GENRE={
+    sci:{lead:"1日で終わってレポートの見本まで付いた実験キットもあります。炎の色が変わる「炎色反応」は見た目のインパクトも抜群です。",btn:"炎色反応の実験キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b197c6.621201d2.55b197c7.409d47ae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fneoshop2%2Fwsl-01%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"},
+    nat:{lead:"虫めがね・観察ケース・図鑑など、観察の道具は楽天市場でそろえられます。",btn:"観察キットを楽天で探す",url:rakuSearch("観察キット 自由研究")},
+    cra:{lead:"材料がひとまとめになった工作キットなら、買い出しなしですぐ始められます。",btn:"工作キットを楽天で探す",url:rakuSearch("工作キット 小学生")},
+    coo:AD_SEARCH,
+    res:{lead:"調べたことをまとめる白地図や学習ポスターは、楽天市場で手に入ります。",btn:"白地図・学習ポスターを楽天で探す",url:rakuSearch("白地図 学習")},
+    it:{lead:"プログラミングのテーマに本格的に取り組むなら、ゲームで学べる小中学生専門のオンラインスクールがおすすめです。",html:'<a class="adbtn" href="https://px.a8.net/svt/ejp?a8mat=4B7WD2+6F07HU+4QCS+5YRHE" rel="nofollow sponsored noopener" target="_blank">小中学生専門のオンランプログラミングスクール【アンズテック】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B7WD2+6F07HU+4QCS+5YRHE" alt="">'}
+  };
+  const AD_PLANET={lead:"星の観察とセットで、自分で作って天井に映せるプラネタリウム工作キットはどうですか。",btn:"プラネタリウム工作キットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/hgc/557d95de.4241bb64.557d95df.546fe0d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnenohoshi%2F016_01%2F%3FvariantId%3D016_01&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"};
+  const AD_ANT={lead:"アリの観察は、巣の中まで見える専用キットを使うと毎日の記録がしやすくなります。",btn:"アリの巣観察セットを見る（楽天）",url:"https://hb.afl.rakuten.co.jp/ichiba/55b186da.b423c852.55b186db.4d32ad1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsucame%2Fhit687%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"};
+  let ad=AD_GENRE[sel.genre]||AD_SEARCH;
+  if(items.some(function(x){return /星座|月の満ち欠け/.test(x.t);}))ad=AD_PLANET;
+  if(items.some(function(x){return /アリの行列/.test(x.t);}))ad=AD_ANT;
+  document.getElementById('adLead').textContent=ad.lead;
+  const adBody=document.getElementById('adBody');
+  if(ad.html){
+    adBody.innerHTML=ad.html;
+  }else{
+    adBody.innerHTML='<a class="adbtn" href="'+ad.url+'" target="_blank" rel="nofollow sponsored noopener">'+ad.btn+'</a>';
+  }
+  document.getElementById('result').style.display='block';
+}
+document.getElementById('goBtn').addEventListener('click',function(){
+  if(!sel.grade||!sel.genre||!sel.days){alert('3つの質問すべてに答えてね！');return;}
+  buildPool();
+  showPage();
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('pager').addEventListener('click',function(e){
+  const b=e.target.closest('button');
+  if(!b)return;
+  page=parseInt(b.dataset.p,10);
+  showPage();
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+});
+(function(){
+  const order=["sci","nat","cra","coo","res","it"];
+  document.getElementById('allThemesIntro').textContent="現在"+DB.length+"件のテーマを収録しています。ジャンル名をタップすると一覧が開きます（内容は診断結果で詳しく見られます）。";
+  document.getElementById('allThemes').innerHTML=order.map(function(c){
+    const list=DB.filter(function(x){return x.c===c;});
+    return '<details><summary>'+GENRE[c]+'（'+list.length+'件）</summary><ul class="tlist">'+list.map(function(x){
+      return '<li><strong>'+x.t+'</strong> <span>（'+lvl(x.g)+'・'+DAYS[x.d]+'）</span><br>'+x.desc+'</li>';
+    }).join('')+'</ul></details>';
+  }).join('');
+})();
 </script>
 </body>
 </html>
